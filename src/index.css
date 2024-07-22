@@ -11,3 +11,19 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.primary-color{
+  color: #A11D20
+}
+
+.primary-bg{
+  background-color: #A11D20
+}
+.primary-underline
+{
+  border-bottom: 1px solid #A11D20
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
