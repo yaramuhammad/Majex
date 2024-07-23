@@ -41,7 +41,7 @@ const Register = () => {
                     const data = response.data;
                     localStorage.setItem('token', data.token);
                     toast.success('Registered Successfully');
-                    navigate('/home');
+                    navigate('/');
                 } catch (error) {
                     if (error.response && error.response.data) {
                         setErrors(error.response.data.errors);

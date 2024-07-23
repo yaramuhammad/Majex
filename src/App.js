@@ -3,12 +3,14 @@ import Register from './components/Auth/Register';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import Login from './components/Auth/Login';
 import { Toaster } from 'react-hot-toast';
+import Home from './components/Home';
 
 
 const router = createBrowserRouter(
   [
     { path: '/login', element: <Login />, },
-    { path: '/register', element: <Register />, }
+    { path: '/register', element: <Register />, },
+    { path: '/', element: <Home />, }
 
   ])
 
