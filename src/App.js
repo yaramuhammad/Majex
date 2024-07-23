@@ -16,26 +16,27 @@ const router = createBrowserRouter(
 
 function App() {
   return (
-    <>
-      <RouterProvider router={router} />
-      <Toaster
-        position='bottom-right'
-        toastOptions={{
-          success: {
-            style: {
-              background: '#28a745',
-              color: '#fff',
-            },
-          },
-          error: {
-            style: {
-              background: '#dc3545',
-              color: '#fff',
-            },
-          },
-        }}
-      />
-    </>
+    <Home/>
+    // <>
+    //   <RouterProvider router={router} />
+    //   <Toaster
+    //     position='bottom-right'
+    //     toastOptions={{
+    //       success: {
+    //         style: {
+    //           background: '#28a745',
+    //           color: '#fff',
+    //         },
+    //       },
+    //       error: {
+    //         style: {
+    //           background: '#dc3545',
+    //           color: '#fff',
+    //         },
+    //       },
+    //     }}
+    //   />
+    // </>
   );
 }
 
