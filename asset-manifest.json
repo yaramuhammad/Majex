@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/Majex/static/css/main.24257841.css",
-    "main.js": "/Majex/static/js/main.1ca1545d.js",
+    "main.js": "/Majex/static/js/main.d2f34c97.js",
     "static/js/453.93a18b00.chunk.js": "/Majex/static/js/453.93a18b00.chunk.js",
     "static/media/images 1.png": "/Majex/static/media/images 1.72a08211464e97fbf5a6.png",
     "static/media/logo PNG-01 1.png": "/Majex/static/media/logo PNG-01 1.a7deba54df26f6f7a382.png",
     "index.html": "/Majex/index.html",
     "main.24257841.css.map": "/Majex/static/css/main.24257841.css.map",
-    "main.1ca1545d.js.map": "/Majex/static/js/main.1ca1545d.js.map",
+    "main.d2f34c97.js.map": "/Majex/static/js/main.d2f34c97.js.map",
     "453.93a18b00.chunk.js.map": "/Majex/static/js/453.93a18b00.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.24257841.css",
-    "static/js/main.1ca1545d.js"
+    "static/js/main.d2f34c97.js"
   ]
 }
