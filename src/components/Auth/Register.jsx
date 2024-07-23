@@ -5,6 +5,7 @@ import * as Yup from 'yup';
 import AuthSidePanel from './AuthSidePanel';
 import toast from 'react-hot-toast';
 import { ThreeDots } from 'react-loader-spinner';
+import axios from 'axios';
 
 const Register = () => {
     const [isLoading, setIsLoading] = useState(false);
@@ -28,28 +29,30 @@ const Register = () => {
             mobileNumber: Yup.string().required('Mobile number is required'),
             termsAndConditionsAgreed: Yup.boolean().oneOf([true], 'You must accept the terms and conditions').required('You must accept the terms and conditions'),
         }),
-        onSubmit: async (values, { setErrors }) => {
-            setIsLoading(true);
-            const response = await fetch('https://logistics-solution-wheat.vercel.app/register', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(values),
-            });
-
-            if (response.ok) {
-                const data = await response.json();
-                localStorage.setItem('token', data.token);
-                toast.success('Registered Successfully');
-                navigate('/home'); // navigate to home page
-            } else {
-                const data = await response.json();
-                setErrors(data.errors);
-            }
-            setIsLoading(false);
-        },
-    });
+            onSubmit: async (values, { setErrors }) => {
+                setIsLoading(true);
+                try {
+                    const response = await axios.post('https://logistics-solution-wheat.vercel.app/register', values, {
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                    });
+    
+                    const data = response.data;
+                    localStorage.setItem('token', data.token);
+                    toast.success('Registered Successfully');
+                    navigate('/home');
+                } catch (error) {
+                    if (error.response && error.response.data) {
+                        setErrors(error.response.data.errors);
+                    } else {
+                        toast.error('An error occurred. Please try again.');
+                    }
+                } finally {
+                    setIsLoading(false);
+                }
+            },
+        });
 
     return (
         <div className="flex h-screen">
