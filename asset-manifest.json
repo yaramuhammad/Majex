@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/majex/static/css/main.8457b502.css",
+    "main.js": "/majex/static/js/main.00a93f93.js",
+    "static/js/453.93a18b00.chunk.js": "/majex/static/js/453.93a18b00.chunk.js",
+    "index.html": "/majex/index.html",
+    "main.8457b502.css.map": "/majex/static/css/main.8457b502.css.map",
+    "main.00a93f93.js.map": "/majex/static/js/main.00a93f93.js.map",
+    "453.93a18b00.chunk.js.map": "/majex/static/js/453.93a18b00.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8457b502.css",
+    "static/js/main.00a93f93.js"
+  ]
+}
