@@ -44,6 +44,7 @@ const Register = () => {
                     navigate('/');
                 } catch (error) {
                     if (error.response && error.response.data) {
+                        console.log(error.response.data.errors);
                         setErrors(error.response.data.errors);
                     } else {
                         toast.error('An error occurred. Please try again.');

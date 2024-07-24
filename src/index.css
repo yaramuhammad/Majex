@@ -27,3 +27,8 @@ code {
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.gray-bg{
+  background-color: #D9D9D9;
+}
