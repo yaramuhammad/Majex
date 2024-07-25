@@ -21,7 +21,7 @@ const Search = () => {
                         <input
                             type="text"
                             placeholder="Track Your Order"
-                            className="p-4 rounded-l-lg w-full border-none outline-none"
+                            className="p-4 rounded-l-lg w-full border-none outline-none focus:outline-none"
                         />
                         <button className="primary-bg text-white px-6 py-2 rounded-lg">
                             Track

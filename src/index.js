@@ -1,19 +1,26 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
-import '../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js'
 import '@fortawesome/fontawesome-free/css/all.min.css'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Home from './components/Home/Home';
+import Login from './components/Auth/Login';
+import Register from './components/Auth/Register';
+import ContactPage from './components/ContactUs/ContactPage.jsx';
+import ProfilePage from './components/ProfilePage/ProfilePage.jsx';
+import RequestPage from './components/Requests/RequestPage.jsx';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  // <React.StrictMode>
-    <App />
-  // </React.StrictMode>
+  <Router basename="/Majex">
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/register" element={<Register />} />
+      <Route path='/profile' element={<ProfilePage />} />,
+      <Route path='/request' element={<RequestPage />} />,
+      <Route path='/contact' element={<ContactPage />} />,
+    </Routes>
+  </Router>,
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
