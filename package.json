@@ -18,6 +18,8 @@
     "formik": "^2.4.6",
     "gh-pages": "^6.1.1",
     "i18next": "^23.12.2",
+    "i18next-browser-languagedetector": "^8.0.0",
+    "i18next-http-backend": "^2.5.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-hot-toast": "^2.4.1",

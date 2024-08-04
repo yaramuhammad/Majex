@@ -1,5 +1,8 @@
 {
-    "welcome": "Welcome",
-    "goodbye": "Goodbye"
-  }
-  
+  "home": "Home",
+  "priceOrder": "Price / Order",
+  "requests": "Requests",
+  "shipments": "Shipments",
+  "shopNow": "Shop Now",
+  "services": "Services"
+}

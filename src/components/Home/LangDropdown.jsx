@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 
-const LanguageDropdown = () => {
+const LanguageDropdown = ({dir}) => {
     const { i18n } = useTranslation();
     const [showDropdown, setShowDropdown] = useState(false);
     const dropdownRef = useRef(null);
@@ -24,8 +24,10 @@ const LanguageDropdown = () => {
     }, []);
 
     const changeLanguage = (lng) => {
-        i18n.changeLanguage(lng);
-        setShowDropdown(false);
+        i18n.changeLanguage(lng)
+          .then(() => {
+            setShowDropdown(false);
+          })
     };
 
     return (
@@ -37,7 +39,7 @@ const LanguageDropdown = () => {
                 <span className="text-xs">{i18n.language === 'zh' ? '中文' : i18n.language === 'en' ? 'En' : 'Ar'}</span>
             </div>
             {showDropdown && (
-                <div className="absolute right-0 mt-2 w-48 bg-white border border-gray-200 rounded-lg shadow-lg">
+                <div className={`absolute ${dir==='r'? 'right-0' : 'left-0'} mt-2 w-48 bg-white border border-gray-200 rounded-lg shadow-lg`}>
                     <div onClick={() => changeLanguage('ar')} className="block px-4 py-2 text-gray-800 hover:bg-gray-100">Ar</div>
                     <div onClick={() => changeLanguage('en')} className="block px-4 py-2 text-gray-800 hover:bg-gray-100">En</div>
                     <div onClick={() => changeLanguage('zh')} className="block px-4 py-2 text-gray-800 hover:bg-gray-100">中文</div>

@@ -9,6 +9,8 @@ import Register from './components/Auth/Register';
 import ContactPage from './components/ContactUs/ContactPage.jsx';
 import ProfilePage from './components/ProfilePage/ProfilePage.jsx';
 import RequestPage from './components/Requests/RequestPage.jsx';
+import './i18n';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

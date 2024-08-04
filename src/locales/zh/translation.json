@@ -1,4 +1,9 @@
 {
-    "welcome": "欢迎",
-    "goodbye": "再见"
-}
+    "home": "主页",
+    "priceOrder": "价格 / 订单",
+    "requests": "请求",
+    "shipments": "运输",
+    "shopNow": "立即购买",
+    "services": "服务"
+  }
+  
