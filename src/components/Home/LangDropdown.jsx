@@ -29,7 +29,7 @@ const LanguageDropdown = () => {
     };
 
     return (
-        <div className="relative" ref={dropdownRef}>
+        <div className="relative" ref={dropdownRef} style={{zIndex:"99999"}}>
             <div
                 className="flex items-center space-x-2 border border-gray-500 px-4 py-2 rounded-2xl hover:text-red-600 hover:border-red-600 cursor-pointer"
                 onClick={toggleDropdown}

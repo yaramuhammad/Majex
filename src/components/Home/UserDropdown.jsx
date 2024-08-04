@@ -25,7 +25,7 @@ const UserDropdown = ({ isAuthenticated }) => {
     }, []);
 
     return (
-        <div className="relative" ref={dropdownRef}>
+        <div className="relative" ref={dropdownRef} style={{zIndex:"99999"}}>
             <FontAwesomeIcon
                 icon={faUserCircle}
                 size="xl"

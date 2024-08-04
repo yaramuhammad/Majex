@@ -11,20 +11,22 @@ const services = [
 
 const Services = () => {
   return (
-    <div className="container mx-auto px-16 py-10">
-      <div className="grid grid-cols-1 md:grid-cols-2">
+    <div className="mx-auto px-16 py-10">
+      <div className="grid grid-cols-1 lg:grid-cols-2">
         {services.map((service, index) => (
           <div key={index} className="relative">
             <img
               src={service.image}
               alt={service.title}
-              className="w-full "
+              className="w-full object-cover"
             />
-            <div className="absolute inset-0 flex flex-col justify-center items-center bg-opacity-50 p-6 ">
-              <div className={service.title ? 'max-h-min bg-white px-12 py-6 text-xl font-bold' : ''}>
-                <h2 className="text-xl font-bold">{service.title}</h2>
-                <p>{service.description}</p>
-              </div>
+            <div className="absolute inset-0 flex flex-col justify-center items-center bg-opacity-50 p-6">
+              {service.title && (
+                <div className="max-h-min bg-white px-12 py-6 text-xl font-bold">
+                  <h2 className="text-xl font-bold">{service.title}</h2>
+                  <p>{service.description}</p>
+                </div>
+              )}
             </div>
           </div>
         ))}
