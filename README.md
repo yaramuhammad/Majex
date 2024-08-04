@@ -1,1 +1,1 @@
-# Majaxx
+# Majex
