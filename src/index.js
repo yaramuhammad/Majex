@@ -6,9 +6,9 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './components/Home/Home';
 import Login from './components/Auth/Login';
 import Register from './components/Auth/Register';
-import ContactPage from './components/ContactUs/ContactPage.jsx';
-import ProfilePage from './components/ProfilePage/ProfilePage.jsx';
-import RequestPage from './components/Requests/RequestPage.jsx';
+import Contact from './components/Contact/Contact.jsx';
+import Profile from './components/Profile/Profile.jsx';
+import Request from './components/Request/Request.jsx';
 import './i18n';
 
 
@@ -19,9 +19,9 @@ root.render(
       <Route path="/" element={<Home />} />
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Register />} />
-      <Route path='/profile' element={<ProfilePage />} />,
-      <Route path='/request' element={<RequestPage />} />,
-      <Route path='/contact' element={<ContactPage />} />,
+      <Route path='/profile' element={<Profile />} />,
+      <Route path='/request' element={<Request />} />,
+      <Route path='/contact' element={<Contact />} />,
     </Routes>
   </Router>,
 );
