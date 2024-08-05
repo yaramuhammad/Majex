@@ -1,10 +1,13 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, getI18n } from 'react-i18next';
 
 const LanguageDropdown = ({dir}) => {
     const { i18n } = useTranslation();
     const [showDropdown, setShowDropdown] = useState(false);
     const dropdownRef = useRef(null);
+
+    const i18N = getI18n();
+    const currentLanguage = i18N.language
 
     const toggleDropdown = () => {
         setShowDropdown(!showDropdown);
@@ -36,7 +39,7 @@ const LanguageDropdown = ({dir}) => {
                 className="flex items-center space-x-2 border border-gray-500 px-4 py-2 rounded-2xl hover:text-red-600 hover:border-red-600 cursor-pointer"
                 onClick={toggleDropdown}
             >
-                <span className="text-xs">{i18n.language === 'zh' ? '中文' : i18n.language === 'en' ? 'En' : 'Ar'}</span>
+                <span className="text-xs">{currentLanguage === 'zh' ? '中文' : currentLanguage === 'en' ? 'En' : 'Ar'}</span>
             </div>
             {showDropdown && (
                 <div className={`absolute ${dir==='r'? 'right-0' : 'left-0'} mt-2 w-48 bg-white border border-gray-200 rounded-lg shadow-lg`}>
