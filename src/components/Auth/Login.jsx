@@ -80,7 +80,7 @@ const Login = () => {
                         ) : null}
 
                         <div className={`flex justify-between items-center mt-4 ${currentLanguage === 'ar' ? 'flex-row-reverse' : ''}`}>
-                            <a href="#" className={`primary-color ${currentLanguage === 'ar' ? 'text-right' : ''}`}>{t('Forgot your password?')}</a>
+                            <Link to="" className={`primary-color ${currentLanguage === 'ar' ? 'text-right' : ''}`}>{t('Forgot your password?')}</Link>
                         </div>
 
                         <button type="submit" className={isLoading ? "primary-bg mt-8 w-full text-white px-4 py-4 rounded-xl flex justify-center" : "primary-bg mt-8 w-full text-white px-4 py-2 rounded-xl flex justify-center"}>

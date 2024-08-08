@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import Sidebar from '../Sidebar/Sidebar';
 import img15 from '../../assets/Checking boxes-bro 1.png';
 import RequestCard from './RequestCard';
 import toast from 'react-hot-toast';

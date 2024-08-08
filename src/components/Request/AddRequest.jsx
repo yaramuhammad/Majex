@@ -1,22 +1,17 @@
 import React from 'react';
 import { useFormik } from 'formik';
-import Sidebar from '../Sidebar/Sidebar';
 import axios from 'axios';
-// import img16 from '../../assets/Line 3.png';
-// import img17 from '../../assets/Line 3 (1).png';
-// Add your image for the button here
+
 
 function AddRequest() {
     const formik = useFormik({
         initialValues: { product: '', productLink: '', quantity: '', note: '', weight: '', color: '' },
         onSubmit: async (values) => {
-            // This function is now unused. Handle submit in handleConfirmRequest.
         }
     });
 
     const handleImageUpload = (event) => {
         const file = event.target.files[0];
-        // File handling logic if needed
         console.log('Selected file:', file);
     };
 
@@ -29,13 +24,11 @@ function AddRequest() {
         formData.append('weight', formik.values.weight);
         formData.append('color', formik.values.color);
 
-        // Check if a file was uploaded
         const fileInput = document.querySelector('input[type="file"]');
         if (fileInput && fileInput.files.length > 0) {
             formData.append('file', fileInput.files[0]);
         }
 
-        // Log FormData contents for debugging
         for (let [key, value] of formData.entries()) {
             console.log(`${key}: ${value}`);
         }

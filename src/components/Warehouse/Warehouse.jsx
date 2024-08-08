@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import Sidebar from '../Sidebar/Sidebar';
 import img1 from '../../assets/Price-Increase-Strategy-1024x659 2.png';
 import { useTranslation, getI18n } from 'react-i18next';
 import Loading from '../Loading';
