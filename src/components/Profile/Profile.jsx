@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 import '@fortawesome/fontawesome-free/css/all.min.css';
-import img15 from '../../assets/Vector (11).png';
+import Loading from './../Loading'
 
 function Profile() {
   const [userData, setUserData] = useState({
@@ -13,6 +13,8 @@ function Profile() {
     whatsappNumber: '',
     interests: '',
   });
+
+  const [loading, setLoading] = useState(true); 
 
   useEffect(() => {
     const fetchData = async () => {
@@ -36,11 +38,17 @@ function Profile() {
         });
       } catch (error) {
         console.error('Error fetching data:', error);
+      } finally {
+        setLoading(false); 
       }
     };
 
     fetchData();
   }, []);
+
+  if (loading) {
+    return <Loading/>
+  }
 
   return (
     <div className="grid grid-cols-5 h-screen">
@@ -48,7 +56,6 @@ function Profile() {
         <div className="flex items-center space-x-4 py-4">
           <div>
             <i className="fa-regular fa-user fa-2xl"></i>
-
           </div>
           <div className="w-3/4">
             <span className="text-gray-800 font-bold text-3xl">{userData.name}</span>

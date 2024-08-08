@@ -1,15 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Sidebar from '../Sidebar/Sidebar';  // Adjust the path as needed
 import img15 from '../../assets/Drone Delivery-rafiki 1.png';
 
-function Request() {
+function Shipment() {
   return (
-    <div className="grid grid-cols-6 h-screen">
-      {/* Sidebar 1/6 width */}
-      <Sidebar />
-
-      {/* Main content 5/6 width */}
+    <div className="grid grid-cols-5 h-screen">
+  
       <div className="col-span-5 h-full flex flex-col p-5">
         <h2 className='pt-7 font-bold'>Shipments</h2>
         <p style={{ color: '#4B4B4B' }} className='pt-5'>Find anything you want to request from any store in China.</p>
@@ -33,4 +29,4 @@ function Request() {
   );
 }
 
-export default Request;
+export default Shipment;

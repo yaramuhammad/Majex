@@ -75,5 +75,10 @@
   "Password Confirmation is required": "Password Confirmation is required",
   "Mobile number is required": "Mobile number is required",
   "Language is required": "Language is required",
-  "Forgot your password?": "Forgot your password?"
+  "Forgot your password?": "Forgot your password?",
+  "description": "Promptly addressing customer needs, offering clear communication, and resolving issues effectively. It prioritizes a positive customer experience through empathy, responsiveness, and a commitment to exceeding expectations, fostering lasting relationships.",
+  "availability": "Services are available 24 hours a day and 7 days a week to provide customers with a high level of comfort.",
+  "fastestService": "Fastest Service",
+  "affordablePrices": "Affordable Prices",
+  "safetyAndSecurity": "Safety and Security"
 }

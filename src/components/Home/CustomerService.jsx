@@ -1,41 +1,47 @@
 import React from 'react';
 import headsetImage from '../../assets/customercare.png';
-import bestPriceImage from './../../assets/bestprice.png'
+import bestPriceImage from './../../assets/bestprice.png';
 import clockImage from './../../assets/alltime.png';
 import checkImage from './../../assets/check.png';
+import { useTranslation, getI18n } from 'react-i18next';
 
 const CustomerService = () => {
+  const { t } = useTranslation();
+  const i18n = getI18n();
+  const currentLanguage = i18n.language;
+
+  // Define a conditional class for text alignment
+  const textAlignClass = currentLanguage === 'ar' ? 'text-right' : 'text-left';
+
   return (
     <div className='mx-auto px-16 my-32'>
       <div className="flex flex-col items-center p-4">
-        <div className="flex items-center space-x-4 mb-4 flex-col lg:flex-row">
-          <img src={headsetImage} alt="Customer Service" className="rounded-full mb-10" />
-          <p className="font-medium text-2xl lg:text-3xl mb-10">
-            Promptly addressing customer needs, offering clear communication, and resolving issues effectively. It
-            prioritizes a positive customer experience through empathy, responsiveness, and a commitment to exceeding
-            expectations, fostering lasting relationships.
+        <div className={`flex items-center space-x-4 mb-4 flex-col lg:flex-row ${textAlignClass}`}>
+          <img src={headsetImage} alt={t('description')} className="rounded-full mb-10" />
+          <p className={`font-medium text-2xl lg:text-3xl mb-10`}>
+            {t('description')}
           </p>
         </div>
-        <div className="flex items-center space-x-4 mb-4 flex-col-reverse lg:flex-row">
-          <p className="font-medium text-2xl lg:text-3xl mb-10">Services are available 24 hours a day and 7 days a week to provide customers with a high level of comfort.</p>
-          <img src={clockImage} alt="24/7 Service" className=' mb-10' />
+        <div className={`flex items-center space-x-4 mb-4 flex-col-reverse lg:flex-row ${textAlignClass}`}>
+          <p className={`font-medium text-2xl lg:text-3xl mb-10`}>{t('availability')}</p>
+          <img src={clockImage} alt={t('availability')} className='mb-10' />
         </div>
-        <div className="flex items-center space-x-4 mb-4 flex-col lg:flex-row">
-          <img src={bestPriceImage} alt="Best Price" className=' mb-10'/>
-          <p className="font-medium text-2xl lg:text-3xl mb-10">Services are available 24 hours a day and 7 days a week to provide customers with a high level of comfort.</p>
+        <div className={`flex items-center space-x-4 mb-4 flex-col lg:flex-row ${textAlignClass}`}>
+          <img src={bestPriceImage} alt={t('availability')} className='mb-10' />
+          <p className={`font-medium text-2xl lg:text-3xl mb-10`}>{t('availability')}</p>
         </div>
         <div className="flex flex-col md:flex-row w-full mt-10">
           <div className="flex flex-col items-center mx-10 mb-24 md:w-1/3 w-full">
-            <img src={checkImage} alt="Fastest Service" />
-            <p className="font-medium text-2xl mt-2 text-center">Fastest Service</p>
+            <img src={checkImage} alt={t('fastestService')} />
+            <p className={`font-medium text-2xl mt-2 text-center ${textAlignClass}`}>{t('fastestService')}</p>
           </div>
           <div className="flex flex-col items-center mx-10 mb-24 md:w-1/3 w-full">
-            <img src={checkImage} alt="Affordable Prices" />
-            <p className="font-medium text-2xl mt-2 text-center">Affordable Prices</p>
+            <img src={checkImage} alt={t('affordablePrices')} />
+            <p className={`font-medium text-2xl mt-2 text-center ${textAlignClass}`}>{t('affordablePrices')}</p>
           </div>
           <div className="flex flex-col items-center mx-10 md:w-1/3 w-full">
-            <img src={checkImage} alt="Safety and Security" />
-            <p className="font-medium text-2xl mt-2 text-center">Safety and Security</p>
+            <img src={checkImage} alt={t('safetyAndSecurity')} />
+            <p className={`font-medium text-2xl mt-2 text-center ${textAlignClass}`}>{t('safetyAndSecurity')}</p>
           </div>
         </div>
       </div>
