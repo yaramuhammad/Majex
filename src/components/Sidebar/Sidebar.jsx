@@ -3,9 +3,11 @@ import { Link } from 'react-router-dom';
 import SocialMediaIcons from '../Home/SocialMediaIcons';
 import SidebarLang from '../SidebarLang';
 import { logout } from '../../logout';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, getI18n } from 'react-i18next';
 
 const Sidebar = () => {
+  const i18n = getI18n();
+  const currentLanguage = i18n.language;
   const { t } = useTranslation();
 
   const items = [
@@ -21,14 +23,14 @@ const Sidebar = () => {
 
   return (
     <div className="col-span-1 bg-custom-red h-full p-5 pt-8 rounded-tr-xl">
-      <div className="w-100 pt-6 flex space-x-4 pb-12">
+      <div className={`w-100 pt-6 flex space-x-4 pb-12 ${currentLanguage === 'ar' ? 'flex-row-reverse space-x-reverse' : ''}`}>
         <i className="fa-solid fa-bars text-white fa-2xl"></i>
         <i className="fa-regular fa-user text-white fa-2xl"></i>
       </div>
 
       {items.map((item, index) => (
         <Link to={item.link} className="text-white no-underline" key={index}>
-          <div className="w-full flex items-center space-x-4 py-4 pb-3">
+          <div className={`w-full flex items-center space-x-4 py-4 pb-3 ${currentLanguage === 'ar' ? 'flex-row-reverse space-x-reverse text-right' : ''}`}>
             <div className="w-1/4">
               <i className={item.img + ' text-white fa-lg'}></i>
             </div>
@@ -39,7 +41,7 @@ const Sidebar = () => {
         </Link>
       ))}
 
-      <div className="w-full flex items-center space-x-4 py-2 pt-4 mt-11">
+      <div className={`w-full flex items-center space-x-4 py-2 pt-4 mt-11 ${currentLanguage === 'ar' ? 'flex-row-reverse space-x-reverse text-right' : ''}`}>
         <div>
           <i className="fa-solid fa-earth-americas text-white fa-lg"></i>
         </div>
@@ -51,7 +53,8 @@ const Sidebar = () => {
       </div>
 
       <button onClick={() => { logout() }} className="text-white no-underline w-full">
-        <div className="w-full flex items-center space-x-4 py-2 pt-4 mb-7">
+        <div className={`w-full flex items-center space-x-4 py-2 pt-4 mb-7 ${currentLanguage === 'ar' ? 'flex-row-reverse space-x-reverse text-right' : ''}`}>
+
           <div>
             <i className="fa-solid fa-arrow-right-from-bracket text-white fa-lg"></i>
           </div>
