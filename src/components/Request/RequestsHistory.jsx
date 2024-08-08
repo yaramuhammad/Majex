@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next'; 
 import Sidebar from '../Sidebar/Sidebar';
 import img15 from '../../assets/Checking boxes-bro 1.png';
-import { RotatingLines } from 'react-loader-spinner';
+import Loading from '../Loading';
 
 function RequestsHistory() {
     const { t } = useTranslation();
@@ -56,17 +56,8 @@ function RequestsHistory() {
                 </div>
 
                 {loading ? (
-                    <div className="flex justify-center items-center mt-10 w-full min-h-96">
-                        <RotatingLines
-                            visible={true}
-                            height="96"
-                            width="96"
-                            strokeColor="#A11D20"
-                            strokeWidth="5"
-                            animationDuration="0.75"
-                            ariaLabel="rotating-lines-loading"
-                        />
-                    </div>
+                    
+                        <Loading/>
                 ) : requests.length > 0 ? (
                     <div className="flex flex-col mt-10">
                         {requests.map((request) => (

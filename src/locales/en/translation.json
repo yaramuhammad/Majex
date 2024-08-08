@@ -27,5 +27,18 @@
   "footerDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare cursus sed nunc eget dictum.",
   "searchPlaceholder": "Search",
   "majex": "Majex",
-  "contact": "Contact"
+  "contact": "Contact",
+  "China WareHouse": "China Warehouse",
+  "Loading warehouse data...": "Loading warehouse data...",
+  "User Identify": "User Identify",
+  "Country": "Country",
+  "City": "City",
+  "District": "District",
+  "Street": "Street",
+  "Building": "Building",
+  "Phone": "Phone",
+  "Warehouse No": "Warehouse No",
+  "Address English": "Address English",
+  "Address China": "Address China",
+  "Error loading data": "Error loading data"
 }

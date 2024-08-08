@@ -15,7 +15,7 @@ const Sidebar = () => {
     { img: "fa-solid fa-box", text: t('Shipments'), link: '/route4' },
     { img: "fa-solid fa-cart-shopping", text: t('Cart'), link: '/route5' },
     { img: "fa-solid fa-basket-shopping", text: t('Orders'), link: '/route6' },
-    { img: "fa-solid fa-warehouse", text: t('Warehouse'), link: '/route7' },
+    { img: "fa-solid fa-warehouse", text: t('Warehouse'), link: '/warehouse' },
     { img: "fa-solid fa-headset", text: t('Contact'), link: '/route8' },
   ];
 

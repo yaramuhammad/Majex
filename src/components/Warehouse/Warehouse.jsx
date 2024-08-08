@@ -1,9 +1,13 @@
 import React, { useEffect, useState } from 'react';
-import Sidebar from '../Sidebar/Sidebar';  // Adjust the path as needed
+import Sidebar from '../Sidebar/Sidebar'; 
 import img1 from '../../assets/Price-Increase-Strategy-1024x659 2.png';
+import { useTranslation } from 'react-i18next'; 
+import Loading from '../Loading';
 
 function Warehouse() {
     const [warehouseData, setWarehouseData] = useState(null);
+    const [loading, setLoading] = useState(true);
+    const { t } = useTranslation(); 
 
     useEffect(() => {
         const token = localStorage.getItem('token');
@@ -17,8 +21,12 @@ function Warehouse() {
                 .then(data => {
                     console.log('Fetched warehouse data:', data);
                     setWarehouseData(data.warehouse); 
+                    setLoading(false);  // Set loading to false after data is fetched
                 })
-                .catch(error => console.error('Error fetching warehouse data:', error));
+                .catch(error => {
+                    console.error('Error fetching warehouse data:', error);
+                    setLoading(false);  // Set loading to false on error
+                });
         }
     }, []);
 
@@ -31,28 +39,28 @@ function Warehouse() {
                     <img src={img1} alt="Warehouse" className="w-full object-cover" />
                     <div className="absolute inset-0 flex items-center justify-center">
                         <div className="bg-white rounded-lg shadow-lg px-32 py-7">
-                            <span className="text-center text-gray-800 font-bold">China WareHouse</span>
+                            <span className="text-center text-gray-800 font-bold">{t('China WareHouse')}</span>
                         </div>
                     </div>
                 </div>
                 <div className="p-5 space-y-4">
-                    {warehouseData ? (
+                    {loading ? (
+                        <Loading/>
+                    ) : warehouseData ? (
                         <div className="bg-white p-6 rounded-lg shadow-md">
-                        <p className="text-lg font-semibold mt-2"><strong className='text-custom-red'>User Identify :</strong> {warehouseData._id}</p>
-
-                            <p className="text-lg font-semibold mt-2 "><strong className='text-custom-red'>Country:</strong> {warehouseData.country}</p>
-                            <p className="text-lg font-semibold mt-2"><strong className='text-custom-red'>City:</strong> {warehouseData.city}</p>
-                            <p className="text-lg font-semibold mt-2"><strong className='text-custom-red'>District:</strong> {warehouseData.district}</p>
-                            <p className="text-lg font-semibold mt-2"><strong className='text-custom-red'>Street:</strong> {warehouseData.street}</p>
-                            <p className="text-lg font-semibold mt-2"><strong className='text-custom-red'>Building:</strong> {warehouseData.building}</p>
-                            <p className="text-lg font-semibold mt-2"><strong className='text-custom-red'>Phone:</strong> {warehouseData.phone}</p>
-                            <p className="text-lg font-semibold mt-2"><strong className='text-custom-red'>Warehouse No:</strong> {warehouseData.warehouseNo}</p>
-                            <p className="text-lg font-semibold mt-2"><strong className='text-custom-red'>Address English:</strong> {warehouseData.addressEnglish}</p>
-                            <p className="text-lg font-semibold mt-2"><strong className='text-custom-red'>Address China:</strong> {warehouseData.addressChina}</p>
-                           
+                            <p className="text-lg font-semibold mt-2"><span className='text-custom-red'>{t('User Identify')}:</span> {warehouseData._id}</p>
+                            <p className="text-lg font-semibold mt-2"><span className='text-custom-red'>{t('Country')}:</span> {warehouseData.country}</p>
+                            <p className="text-lg font-semibold mt-2"><span className='text-custom-red'>{t('City')}:</span> {warehouseData.city}</p>
+                            <p className="text-lg font-semibold mt-2"><span className='text-custom-red'>{t('District')}:</span> {warehouseData.district}</p>
+                            <p className="text-lg font-semibold mt-2"><span className='text-custom-red'>{t('Street')}:</span> {warehouseData.street}</p>
+                            <p className="text-lg font-semibold mt-2"><span className='text-custom-red'>{t('Building')}:</span> {warehouseData.building}</p>
+                            <p className="text-lg font-semibold mt-2"><span className='text-custom-red'>{t('Phone')}:</span> {warehouseData.phone}</p>
+                            <p className="text-lg font-semibold mt-2"><span className='text-custom-red'>{t('Warehouse No')}:</span> {warehouseData.warehouseNo}</p>
+                            <p className="text-lg font-semibold mt-2"><span className='text-custom-red'>{t('Address English')}:</span> {warehouseData.addressEnglish}</p>
+                            <p className="text-lg font-semibold mt-2"><span className='text-custom-red'>{t('Address China')}:</span> {warehouseData.addressChina}</p>
                         </div>
                     ) : (
-                        <p className="text-center text-gray-500">Loading warehouse data...</p>
+                        <p className="text-center text-gray-500">{t('Error loading data')}</p>
                     )}
                 </div>
             </div>

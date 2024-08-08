@@ -27,5 +27,18 @@
   "footerDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare cursus sed nunc eget dictum.",
   "searchPlaceholder": "搜索",
   "majex": "Majex",
-  "contact": "联系"
+  "contact": "联系",
+  "China WareHouse": "中国仓库",
+  "Loading warehouse data...": "加载仓库数据中...",
+  "User Identify": "用户标识",
+  "Country": "国家",
+  "City": "城市",
+  "District": "地区",
+  "Street": "街道",
+  "Building": "建筑",
+  "Phone": "电话",
+  "Warehouse No": "仓库编号",
+  "Address English": "英文地址",
+  "Address China": "中文地址",
+  "Error loading data": "加载数据时出错"
 }

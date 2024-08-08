@@ -27,5 +27,18 @@
   "footerDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare cursus sed nunc eget dictum.",
   "searchPlaceholder": "بحث",
   "majex": "Majex",
-  "contact": "اتصال"
+  "contact": "اتصال",
+  "China WareHouse": "مستودع الصين",
+  "Loading warehouse data...": "جارٍ تحميل بيانات المستودع...",
+  "User Identify": "تحديد المستخدم",
+  "Country": "البلد",
+  "City": "المدينة",
+  "District": "الحي",
+  "Street": "الشارع",
+  "Building": "المبنى",
+  "Phone": "الهاتف",
+  "Warehouse No": "رقم المستودع",
+  "Address English": "العنوان باللغة الإنجليزية",
+  "Address China": "العنوان بالصينية",
+  "Error loading data": "خطأ في تحميل البيانات"
 }
