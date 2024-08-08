@@ -1,11 +1,12 @@
 {
   "files": {
-    "main.css": "/Majex/static/css/main.48dd0a58.css",
-    "main.js": "/Majex/static/js/main.073e9df9.js",
+    "main.css": "/Majex/static/css/main.4af0f4dd.css",
+    "main.js": "/Majex/static/js/main.be94cb61.js",
     "static/media/hero.png": "/Majex/static/media/hero.01ccd57b5ab18e7b1388.png",
     "static/media/fa-solid-900.ttf": "/Majex/static/media/fa-solid-900.07ed6d5fa32c1d54af0f.ttf",
     "static/media/customercare.png": "/Majex/static/media/customercare.b9aeea09abcfd548edd2.png",
     "static/media/service1.png": "/Majex/static/media/service1.dbd4ad96c5db72af61ac.png",
+    "static/media/Price-Increase-Strategy-1024x659 2.png": "/Majex/static/media/Price-Increase-Strategy-1024x659 2.60640433b09f0b286a65.png",
     "static/media/fa-brands-400.ttf": "/Majex/static/media/fa-brands-400.0ff70dcbf135d859ebf3.ttf",
     "static/media/fa-solid-900.woff2": "/Majex/static/media/fa-solid-900.93f719f4d62bfa3e748c.woff2",
     "static/media/images 1.png": "/Majex/static/media/images 1.72a08211464e97fbf5a6.png",
@@ -15,17 +16,18 @@
     "static/media/bestprice.png": "/Majex/static/media/bestprice.8972a1d877a8370d9c80.png",
     "static/media/Checking boxes-bro 1.png": "/Majex/static/media/Checking boxes-bro 1.e66831ba76e64e226c5a.png",
     "static/media/fa-regular-400.woff2": "/Majex/static/media/fa-regular-400.bc3722686635b5f86132.woff2",
+    "static/media/Drone Delivery-rafiki 1.png": "/Majex/static/media/Drone Delivery-rafiki 1.c4384441a6c74721a8ea.png",
     "static/media/alltime.png": "/Majex/static/media/alltime.b86791ee8a4197e56f80.png",
     "static/media/logo PNG-01 1.png": "/Majex/static/media/logo PNG-01 1.a7deba54df26f6f7a382.png",
     "static/media/fa-v4compatibility.ttf": "/Majex/static/media/fa-v4compatibility.0f6cb412603527bda691.ttf",
     "static/media/fa-v4compatibility.woff2": "/Majex/static/media/fa-v4compatibility.6cfec8414be20e2c3426.woff2",
     "index.html": "/Majex/index.html",
     "static/media/getFetch.cjs": "/Majex/static/media/getFetch.c4cca45e22bc1b2c7d0d.cjs",
-    "main.48dd0a58.css.map": "/Majex/static/css/main.48dd0a58.css.map",
-    "main.073e9df9.js.map": "/Majex/static/js/main.073e9df9.js.map"
+    "main.4af0f4dd.css.map": "/Majex/static/css/main.4af0f4dd.css.map",
+    "main.be94cb61.js.map": "/Majex/static/js/main.be94cb61.js.map"
   },
   "entrypoints": [
-    "static/css/main.48dd0a58.css",
-    "static/js/main.073e9df9.js"
+    "static/css/main.4af0f4dd.css",
+    "static/js/main.be94cb61.js"
   ]
 }
