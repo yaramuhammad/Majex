@@ -1,9 +1,17 @@
 {
-    "home": "الصفحة الرئيسية",
-    "priceOrder": "السعر / الطلب",
-    "requests": "الطلبات",
-    "shipments": "الشحنات",
-    "shopNow": "تسوق الآن",
-    "services": "الخدمات"
-  }
-  
+  "home": "الصفحة الرئيسية",
+  "priceOrder": "السعر / الطلب",
+  "requests": "الطلبات",
+  "shipments": "الشحنات",
+  "shopNow": "تسوق الآن",
+  "services": "الخدمات",
+  "Home": "الصفحة الرئيسية",
+  "PriceOrder": " السعر / الطلب",
+  "Requests": "الطلبات",
+  "Shipments": "الشحنات",
+  "Cart": "السلة",
+  "Orders": "الطلبات",
+  "Warehouse": "المستودع",
+  "Contact": "اتصل",
+  "Logout": " تسجيل الخروج"
+}

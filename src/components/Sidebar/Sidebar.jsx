@@ -3,17 +3,20 @@ import { Link } from 'react-router-dom';
 import SocialMediaIcons from '../Home/SocialMediaIcons';
 import SidebarLang from '../SidebarLang';
 import { logout } from '../../logout';
+import { useTranslation } from 'react-i18next';
 
 const Sidebar = () => {
+  const { t } = useTranslation();
+
   const items = [
-    { img: "fa-solid fa-house", text: 'Home', link: '/' },
-    { img: "fa-solid fa-tag", text: 'Price/Order', link: '/route2' },
-    { img: "fa-solid fa-boxes-packing", text: 'Requests', link: '/request' },
-    { img: "fa-solid fa-box", text: 'Shipments', link: '/route4' },
-    { img: "fa-solid fa-cart-shopping", text: 'Cart', link: '/route5' },
-    { img: "fa-solid fa-basket-shopping", text: 'Orders', link: '/route6' },
-    { img: "fa-solid fa-warehouse", text: 'Warehouse', link: '/route7' },
-    { img: "fa-solid fa-headset", text: 'Contact', link: '/route8' },
+    { img: "fa-solid fa-house", text: t('Home'), link: '/' },
+    { img: "fa-solid fa-tag", text: t('PriceOrder'), link: '/route2' },
+    { img: "fa-solid fa-boxes-packing", text: t('Requests'), link: '/request' },
+    { img: "fa-solid fa-box", text: t('Shipments'), link: '/route4' },
+    { img: "fa-solid fa-cart-shopping", text: t('Cart'), link: '/route5' },
+    { img: "fa-solid fa-basket-shopping", text: t('Orders'), link: '/route6' },
+    { img: "fa-solid fa-warehouse", text: t('Warehouse'), link: '/route7' },
+    { img: "fa-solid fa-headset", text: t('Contact'), link: '/route8' },
   ];
 
   return (
@@ -24,8 +27,8 @@ const Sidebar = () => {
       </div>
 
       {items.map((item, index) => (
-        <Link to={item.link} className="text-white no-underline">
-          <div key={index} className="w-full flex items-center space-x-4 py-4 pb-3">
+        <Link to={item.link} className="text-white no-underline" key={index}>
+          <div className="w-full flex items-center space-x-4 py-4 pb-3">
             <div className="w-1/4">
               <i className={item.img + ' text-white fa-lg'}></i>
             </div>
@@ -37,26 +40,24 @@ const Sidebar = () => {
       ))}
 
       <div className="w-full flex items-center space-x-4 py-2 pt-4 mt-11">
-        <div >
+        <div>
           <i className="fa-solid fa-earth-americas text-white fa-lg"></i>
         </div>
-        <div >
+        <div>
           <span className="text-white">
             <SidebarLang />
           </span>
         </div>
-
       </div>
-      <button onClick={()=>{logout()}}
-      className="text-white no-underline">
+
+      <button onClick={() => { logout() }} className="text-white no-underline">
         <div className="w-full flex items-center space-x-4 py-2 pt-4 mb-7">
-          <div >
-            <i class="fa-solid fa-arrow-right-from-bracket text-white fa-lg"></i>
+          <div>
+            <i className="fa-solid fa-arrow-right-from-bracket text-white fa-lg"></i>
           </div>
           <div className="w-1/2">
-            Logout
+            {t('Logout')}
           </div>
-
         </div>
       </button>
 

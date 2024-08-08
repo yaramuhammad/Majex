@@ -4,5 +4,14 @@
   "requests": "Requests",
   "shipments": "Shipments",
   "shopNow": "Shop Now",
-  "services": "Services"
+  "services": "Services",
+  "Home": "Home",
+  "PriceOrder": "Price/Order",
+  "Requests": "Requests",
+  "Shipments": "Shipments",
+  "Cart": "Cart",
+  "Orders": "Orders",
+  "Warehouse": "Warehouse",
+  "Contact": "Contact",
+  "Logout": "Logout"
 }
