@@ -1,16 +1,51 @@
-
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 import { Link } from 'react-router-dom';
-
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import img15 from '../../assets/Vector (11).png';
 import Sidebar from '../Sidebar/Sidebar';
 
 function Profile() {
+  const [userData, setUserData] = useState({
+    name: '',
+    email: '',
+    password: '',
+    mobileNumber: '',
+    whatsappNumber: '',
+    interests: '',
+  });
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const token = localStorage.getItem('token');
+        const response = await axios.get('https://logistics-solution-wheat.vercel.app/api/user/me', {
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json',
+            'Authorization': `Bearer ${token}`,
+          },
+        });
+        const data = response.data;
+        setUserData({
+          name: data.name || '',
+          email: data.email || '',
+          password: '**********',
+          mobileNumber: data.mobileNumber || '',
+          whatsappNumber: data.whatsappNumber || '',
+          interests: data.interests || '',
+        });
+      } catch (error) {
+        console.error('Error fetching data:', error);
+      }
+    };
+
+    fetchData();
+  }, []);
 
   return (
     <div className="grid grid-cols-6 h-screen">
-      <Sidebar/>
+      <Sidebar />
 
       <div className="col-span-3 h-full p-5">
         <div className="flex items-center space-x-4 py-4">
@@ -18,25 +53,27 @@ function Profile() {
             <img src={img15} alt="Example" className="w-full h-auto" />
           </div>
           <div className="w-3/4">
-            <span className="text-gray-800 font-bold text-3xl">Example Text</span>
+            <span className="text-gray-800 font-bold text-3xl">{userData.name}</span>
           </div>
         </div>
         <form className="space-y-4">
           {[
-            { label: 'Name', type: 'text', placeholder: 'Enter your name' },
-            { label: 'Email', type: 'email', placeholder: 'Enter your email' },
-            { label: 'Password', type: 'password', placeholder: 'Enter your password' },
-            { label: 'Mobile Number', type: 'tel', placeholder: 'Enter your mobile number' },
-            { label: 'WhatsApp Number', type: 'tel', placeholder: 'Enter your WhatsApp number' },
-            { label: 'Interests', type: 'text', placeholder: 'Enter your interests' }
+            { label: 'Name', value: userData.name, type: 'text', placeholder: 'Enter your name' },
+            { label: 'Email', value: userData.email, type: 'email', placeholder: 'Enter your email' },
+            { label: 'Password', value: userData.password, type: 'password', placeholder: 'Enter your password' },
+            { label: 'Mobile Number', value: userData.mobileNumber, type: 'tel', placeholder: 'Enter your mobile number' },
+            { label: 'WhatsApp Number', value: userData.whatsappNumber, type: 'tel', placeholder: 'Enter your WhatsApp number' },
+            { label: 'Interests', value: userData.interests, type: 'text', placeholder: 'Enter your interests' }
           ].map((field, index) => (
             <div key={index} className="flex flex-col space-y-2">
               <label className="text-custom-red font-semibold">{field.label}</label>
               <div className="relative">
                 <input
                   type={field.type}
+                  value={field.value}
                   placeholder={field.placeholder}
-                  className="border border-gray-300 rounded-lg py-3 w-full pr-10"
+                  className="border border-gray-300 rounded-lg py-3 w-full pr-10 bg-gray-100"
+                  readOnly
                 />
                 <Link to="/edit" className="absolute right-3 top-1/2 transform -translate-y-1/2">
                   <i className="fa-regular fa-pen-to-square w-6 h-6 cursor-pointer primary-color fa-xl"></i>
@@ -74,4 +111,3 @@ function Profile() {
 }
 
 export default Profile;
-
