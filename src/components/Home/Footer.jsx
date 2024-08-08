@@ -3,31 +3,38 @@ import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from 'react-router-dom';
 import SocialMediaIcons from './SocialMediaIcons';
+import { useTranslation, getI18n } from 'react-i18next';
 
 const Footer = () => {
+    const { t } = useTranslation();
+    const i18n = getI18n(); 
+
+    const currentLanguage = i18n.language;
+    const isRtl = currentLanguage === 'ar';
+
     return (
-        <footer className="bg-black text-white py-10">
+        <footer className={`bg-black text-white py-10 ${isRtl ? 'rtl' : ''}`} dir={isRtl ? 'rtl' : 'ltr'}>
             <div className="mx-auto px-4 lg:px-16">
-                <div className="flex flex-col-reverse lg:flex-row items-start lg:items-stretch">
-                    <div className='w-full lg:w-3/4 mb-8 lg:mb-0 px-10 lg:p-0 mt-10'>
-                        <h2 className="text-2xl font-bold">Your trusted partner in logistics</h2>
-                        <p className='text-md mt-4 lg:w-1/2'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare cursus sed nunc eget dictum  Sed ornare cursus sed nunc eget dictumd nunc eget dictum  Sed ornare cursus sed nunc eget dictum .</p>
+                <div className={`flex flex-col-reverse lg:flex-row items-start lg:items-stretch`}>
+                    <div className={`w-full lg:w-3/4 mb-8 lg:mb-0 px-10 lg:p-0 mt-4 ${isRtl ? 'text-right' : ''}`}>
+                        <h2 className="text-2xl font-bold">{t('footerTitle')}</h2>
+                        <p className='text-md mt-4 lg:w-1/2'>{t('footerDescription')}</p>
                         <form className='bg-white w-full lg:w-1/2 px-4 my-4 flex items-center'>
                             <FontAwesomeIcon
                                 icon={faSearch}
                                 size="xl"
                                 className='text-gray-400'
                             />
-                            <input type="text" className='border-none outline-none w-full ml-2' placeholder='Search' />
+                            <input type="text" className='border-none outline-none w-full ml-2' placeholder={t('searchPlaceholder')} />
                         </form>
                         <SocialMediaIcons/>
                     </div>
                     <div className="w-full lg:w-1/4 flex flex-col lg:flex-col items-center lg:justify-evenly min-h-max">
-                        <h2 className='text-2xl'>Majex</h2>
-                        <Link to="#" className="text-white mt-5 hover:text-red-600 text-base">Home</Link>
-                        <Link to="#" className="text-white mt-5 hover:text-red-600 text-base">Requests</Link>
-                        <Link to="#" className="text-white mt-5 hover:text-red-600 text-base">Price / Order</Link>
-                        <Link to="#" className="text-white mt-5 hover:text-red-600 text-base">Contact</Link>
+                        <h2 className='text-2xl'>{t('majex')}</h2>
+                        <Link to="#" className="text-white mt-5 hover:text-red-600 text-base">{t('home')}</Link>
+                        <Link to="#" className="text-white mt-5 hover:text-red-600 text-base">{t('requests')}</Link>
+                        <Link to="#" className="text-white mt-5 hover:text-red-600 text-base">{t('priceOrder')}</Link>
+                        <Link to="#" className="text-white mt-5 hover:text-red-600 text-base">{t('contact')}</Link>
                     </div>
                 </div>
             </div>

@@ -6,19 +6,17 @@ function Warehouse() {
     const [warehouseData, setWarehouseData] = useState(null);
 
     useEffect(() => {
-        // Retrieve token from local storage
         const token = localStorage.getItem('token');
-
         if (token) {
             fetch('https://logistics-solution-wheat.vercel.app/api/warehouse/66a4a18d19c0b138d7e2797e', {
                 headers: {
-                    Authorization: `Bearer ${token}`, // Correctly format the Authorization header
+                    Authorization: `Bearer ${token}`, 
                 },
             })
                 .then(response => response.json())
                 .then(data => {
-                    console.log('Fetched warehouse data:', data); // Log the fetched data
-                    setWarehouseData(data.warehouse); // Set the nested warehouse data
+                    console.log('Fetched warehouse data:', data);
+                    setWarehouseData(data.warehouse); 
                 })
                 .catch(error => console.error('Error fetching warehouse data:', error));
         }
@@ -26,24 +24,17 @@ function Warehouse() {
 
     return (
         <div className="grid grid-cols-6 h-screen">
-            {/* Sidebar 1/6 width */}
             <Sidebar />
 
-            {/* Main content 5/6 width */}
             <div className="col-span-5 h-full flex flex-col">
-                <div className="relative"> {/* Adjust height as needed */}
-                    {/* Image */}
+                <div className="relative"> 
                     <img src={img1} alt="Warehouse" className="w-full object-cover" />
-
-                    {/* Light square div with centered text */}
                     <div className="absolute inset-0 flex items-center justify-center">
                         <div className="bg-white rounded-lg shadow-lg px-32 py-7">
                             <span className="text-center text-gray-800 font-bold">China WareHouse</span>
                         </div>
                     </div>
                 </div>
-
-                {/* Additional content below the image */}
                 <div className="p-5 space-y-4">
                     {warehouseData ? (
                         <div className="bg-white p-6 rounded-lg shadow-md">

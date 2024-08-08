@@ -20,5 +20,12 @@
   "history": "السجل",
   "addRequestPrompt": "أضف طلبك الآن!",
   "addRequestDescription": "ابحث عن أي شيء تريد طلبه من أي متجر في الصين",
-  "addNewRequestButton": "+ أضف طلب جديد"
+  "addNewRequestButton": "+ أضف طلب جديد",
+  "TrackYourOrder": "تابع الطلب الخاص بك",
+  "Track": "تابع",
+  "footerTitle": "شريكك الموثوق في اللوجستيات",
+  "footerDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare cursus sed nunc eget dictum.",
+  "searchPlaceholder": "بحث",
+  "majex": "Majex",
+  "contact": "اتصال"
 }

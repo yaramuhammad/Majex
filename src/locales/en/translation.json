@@ -20,5 +20,12 @@
   "history": "History",
   "addRequestPrompt": "Add your request now!",
   "addRequestDescription": "Find anything you want to request from any store in China",
-  "addNewRequestButton": "+ Add new request"
+  "addNewRequestButton": "+ Add new request",
+  "TrackYourOrder": "Track Your Order",
+  "Track": "Track",
+  "footerTitle": "Your trusted partner in logistics",
+  "footerDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare cursus sed nunc eget dictum.",
+  "searchPlaceholder": "Search",
+  "majex": "Majex",
+  "contact": "Contact"
 }

@@ -20,5 +20,12 @@
   "history": "历史",
   "addRequestPrompt": "现在添加您的请求！",
   "addRequestDescription": "在中国的任何商店找到您想要的任何东西",
-  "addNewRequestButton": "+ 添加新请求"
+  "addNewRequestButton": "+ 添加新请求",
+  "TrackYourOrder": "跟踪您的订单",
+  "Track": "跟踪",
+  "footerTitle": "您在物流领域的可信赖合作伙伴",
+  "footerDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare cursus sed nunc eget dictum.",
+  "searchPlaceholder": "搜索",
+  "majex": "Majex",
+  "contact": "联系"
 }
