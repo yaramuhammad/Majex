@@ -43,5 +43,11 @@
   "Error loading data": "加载数据时出错",
   "Contact Us": "联系我们",
   "Wechat": "微信",
-  "Whatsapp": "WhatsApp"
+  "Whatsapp": "WhatsApp",
+  "Profile": "个人资料",
+  "Register": "注册",
+  "Login": "登录",
+  "Ar": "阿拉伯语",
+  "En": "英语",
+  "中文": "中文"
 }

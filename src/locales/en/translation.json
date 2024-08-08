@@ -43,5 +43,11 @@
   "Error loading data": "Error loading data",
   "Contact Us": "Contact Us",
   "Wechat": "Wechat",
-  "Whatsapp": "Whatsapp"
+  "Whatsapp": "Whatsapp",
+  "Profile": "Profile",
+  "Register": "Register",
+  "Login": "Login",
+  "Ar": "Arabic",
+  "En": "English",
+  "中文": "Chinese"
 }

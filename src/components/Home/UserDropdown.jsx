@@ -3,10 +3,12 @@ import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUserCircle } from '@fortawesome/free-solid-svg-icons';
 import { logout } from '../../logout';
+import { useTranslation } from 'react-i18next';
 
 const UserDropdown = ({ isAuthenticated, dir }) => {
     const [showDropdown, setShowDropdown] = useState(false);
     const dropdownRef = useRef(null);
+    const { t } = useTranslation();
 
     const toggleDropdown = () => {
         setShowDropdown(!showDropdown);
@@ -26,7 +28,7 @@ const UserDropdown = ({ isAuthenticated, dir }) => {
     }, []);
 
     return (
-        <div className="relative" ref={dropdownRef} style={{zIndex:"99999"}}>
+        <div className="relative" ref={dropdownRef} style={{ zIndex: "99999" }}>
             <FontAwesomeIcon
                 icon={faUserCircle}
                 size="xl"
@@ -34,22 +36,28 @@ const UserDropdown = ({ isAuthenticated, dir }) => {
                 onClick={toggleDropdown}
             />
             {showDropdown && (
-                <div className={`absolute ${dir==='r'? 'right-0' : 'left-0'} mt-2 w-48 bg-white border border-gray-200 rounded-lg shadow-lg`}>
+                <div className={`absolute ${dir === 'r' ? 'right-0' : 'left-0'} mt-2 w-48 bg-white border border-gray-200 rounded-lg shadow-lg`}>
                     {isAuthenticated ? (
                         <>
-                            <Link to="/profile" className="block px-4 py-2 text-gray-800 hover:bg-gray-100">Profile</Link>
+                            <Link to="/profile" className="block px-4 py-2 text-gray-800 hover:bg-gray-100">
+                                {t('Profile')}
+                            </Link>
                             <button
                                 type="button"
                                 className="w-full text-left px-4 py-2 text-gray-800 hover:bg-gray-100"
-                                onClick={()=>{logout()}}
+                                onClick={() => { logout() }}
                             >
-                                Logout
+                                {t('Logout')}
                             </button>
                         </>
                     ) : (
                         <>
-                            <Link to="/register" className="block px-4 py-2 text-gray-800 hover:bg-gray-100">Register</Link>
-                            <Link to="/login" className="block px-4 py-2 text-gray-800 hover:bg-gray-100">Login</Link>
+                            <Link to="/register" className="block px-4 py-2 text-gray-800 hover:bg-gray-100">
+                                {t('Register')}
+                            </Link>
+                            <Link to="/login" className="block px-4 py-2 text-gray-800 hover:bg-gray-100">
+                                {t('Login')}
+                            </Link>
                         </>
                     )}
                 </div>
