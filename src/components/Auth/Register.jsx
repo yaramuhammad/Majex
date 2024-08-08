@@ -6,6 +6,7 @@ import AuthSidePanel from './AuthSidePanel';
 import toast from 'react-hot-toast';
 import { ThreeDots } from 'react-loader-spinner';
 import axios from 'axios';
+import i18n from '../../i18n';
 
 const Register = () => {
     const [isLoading, setIsLoading] = useState(false);
@@ -20,6 +21,7 @@ const Register = () => {
             mobileNumber: '',
             whatsappNumber: '',
             termsAndConditionsAgreed: false,
+            language: i18n.language || 'en', // Set initial language value
         },
         validationSchema: Yup.object({
             name: Yup.string().required('Name is required'),
@@ -28,32 +30,33 @@ const Register = () => {
             password2: Yup.string().oneOf([Yup.ref('password'), null], 'Passwords must match').required('Password Confirmation is required'),
             mobileNumber: Yup.string().required('Mobile number is required'),
             termsAndConditionsAgreed: Yup.boolean().oneOf([true], 'You must accept the terms and conditions').required('You must accept the terms and conditions'),
+            language: Yup.string().required('Language is required'),
         }),
-            onSubmit: async (values, { setErrors }) => {
-                setIsLoading(true);
-                try {
-                    const response = await axios.post('https://logistics-solution-wheat.vercel.app/register', values, {
-                        headers: {
-                            'Content-Type': 'application/json',
-                        },
-                    });
-    
-                    const data = response.data;
-                    localStorage.setItem('token', data.token);
-                    toast.success('Registered Successfully');
-                    navigate('/');
-                } catch (error) {
-                    if (error.response && error.response.data) {
-                        console.log(error.response.data.errors);
-                        setErrors(error.response.data.errors);
-                    } else {
-                        toast.error('An error occurred. Please try again.');
-                    }
-                } finally {
-                    setIsLoading(false);
+        onSubmit: async (values, { setErrors }) => {
+            setIsLoading(true);
+            try {
+                const response = await axios.post('https://logistics-solution-wheat.vercel.app/register', values, {
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                });
+
+                const data = response.data;
+                localStorage.setItem('token', data.token);
+                toast.success('Registered Successfully');
+                navigate('/');
+            } catch (error) {
+                if (error.response && error.response.data) {
+                    console.log(error.response.data.errors);
+                    setErrors(error.response.data.errors);
+                } else {
+                    toast.error('An error occurred. Please try again.');
                 }
-            },
-        });
+            } finally {
+                setIsLoading(false);
+            }
+        },
+    });
 
     return (
         <div className="flex h-screen">
@@ -125,6 +128,22 @@ const Register = () => {
                         {formik.touched.whatsappNumber && formik.errors.whatsappNumber ? (
                             <div className="text-red-600 text-xs">{formik.errors.whatsappNumber}</div>
                         ) : null}
+                        <div className="mt-4">
+                            <label htmlFor="language" className="block text-gray-600">Preferred Language</label>
+                            <select
+                                id="language"
+                                {...formik.getFieldProps('language')}
+                                className={`px-4 py-2 rounded-2xl w-full border-2 ${formik.touched.language && formik.errors.language ? 'border-red-600' : 'border-gray-300'} focus:border-red-600 outline-none`}
+                            >
+                                <option value="english">English</option>
+                                <option value="chinese">Chinese</option>
+                                <option value="arabic">Arabic</option>
+                            </select>
+                            {formik.touched.language && formik.errors.language ? (
+                                <div className="text-red-600 text-xs">{formik.errors.language}</div>
+                            ) : null}
+                        </div>
+
 
                         <div className="flex justify-between mt-4">
                             <label htmlFor="termsAndConditionsAgreed" className="text-gray-600">
@@ -143,6 +162,7 @@ const Register = () => {
                             <div className="text-red-600 text-xs">{formik.errors.termsAndConditionsAgreed}</div>
                         ) : null}
 
+                        
                         <button type="submit" className={isLoading ? "primary-bg mt-8 w-full text-white px-4 py-4 rounded-xl flex justify-center" : "primary-bg mt-8 w-full text-white px-4 py-2 rounded-xl flex justify-center"}>
                             {isLoading ? <ThreeDots
                                 visible={true}

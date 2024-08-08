@@ -1,6 +1,7 @@
 import React from 'react';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import './../../index.css'
 
 const Search = () => {
     return (
@@ -21,7 +22,7 @@ const Search = () => {
                         <input
                             type="text"
                             placeholder="Track Your Order"
-                            className="p-2 sm:p-4 rounded-l-lg w-full border-none outline-none focus:outline-none"
+                            className="inputSearch p-2 sm:p-4 rounded-l-lg w-full border-none outline-none focus:border-red-800 active:outline-none"
                         />
                         <button className="primary-bg text-white px-4 sm:px-6 py-2 rounded-lg">
                             Track

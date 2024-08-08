@@ -2,6 +2,7 @@ import React from 'react';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from 'react-router-dom';
+import SocialMediaIcons from './SocialMediaIcons';
 
 const Footer = () => {
     return (
@@ -19,13 +20,7 @@ const Footer = () => {
                             />
                             <input type="text" className='border-none outline-none w-full ml-2' placeholder='Search' />
                         </form>
-                        <div className='flex space-x-4 lg:justify-start justify-evenly'>
-                            <Link to="#"><img src={require('../../assets/facebook.png')} alt="facebook" /></Link>
-                            <Link to="#"><img src={require('../../assets/Instagram.png')} alt="instagram" /></Link>
-                            <Link to="#"><img src={require('../../assets/Twitter.png')} alt="twitter" /></Link>
-                            <Link to="#"><img src={require('../../assets/tiktok.png')} alt="tiktok" /></Link>
-                            <Link to="#"><img src={require('../../assets/Telegram.png')} alt="telegram" /></Link>
-                        </div>
+                        <SocialMediaIcons/>
                     </div>
                     <div className="w-full lg:w-1/4 flex flex-col lg:flex-col items-center lg:justify-evenly min-h-max">
                         <h2 className='text-2xl'>Majex</h2>

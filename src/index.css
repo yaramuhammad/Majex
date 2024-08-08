@@ -32,3 +32,10 @@ code {
 .gray-bg{
   background-color: #D9D9D9;
 }
+
+
+.inputSearch[type="text"]:focus{
+  box-shadow: 0 0 0 #A11D20;
+  -moz-box-shadow: 0 0 0 #A11D20;
+  -webkit-box-shadow: 0 0 0 #A11D20;
+}

@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUserCircle } from '@fortawesome/free-solid-svg-icons';
+import { logout } from '../../logout';
 
 const UserDropdown = ({ isAuthenticated, dir }) => {
     const [showDropdown, setShowDropdown] = useState(false);
@@ -36,10 +37,11 @@ const UserDropdown = ({ isAuthenticated, dir }) => {
                 <div className={`absolute ${dir==='r'? 'right-0' : 'left-0'} mt-2 w-48 bg-white border border-gray-200 rounded-lg shadow-lg`}>
                     {isAuthenticated ? (
                         <>
-                            <a href="/profile" className="block px-4 py-2 text-gray-800 hover:bg-gray-100">Profile</a>
+                            <Link to="/profile" className="block px-4 py-2 text-gray-800 hover:bg-gray-100">Profile</Link>
                             <button
                                 type="button"
                                 className="w-full text-left px-4 py-2 text-gray-800 hover:bg-gray-100"
+                                onClick={()=>{logout()}}
                             >
                                 Logout
                             </button>
