@@ -55,17 +55,11 @@ function AddRequest() {
 
     return (
         <>
-            <div className="grid grid-cols-6 h-screen">
-                {/* Sidebar 1/6 width */}
-                <Sidebar />
-
-                {/* Main content area */}
+            <div className="grid grid-cols-5 h-screen">
                 <div className="col-span-5 p-4">
                     <div className="grid grid-cols-6 gap-4">
-                        {/* Column 2 */}
                         <div className="col-span-3 flex flex-col items-start p-4">
                             <h1 className="text-xl font-bold mb-4 text-custom-red">Add Request</h1>
-                            {/* <img src={img16} alt="Decorative Line" className="mb-4" /> */}
                             <input
                                 type="file"
                                 onChange={handleImageUpload}

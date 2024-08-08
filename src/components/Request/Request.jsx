@@ -52,8 +52,7 @@ function CurrentRequests() {
   };
 
   return (
-    <div className="grid grid-cols-6 h-screen">
-      <Sidebar />
+    <div className="grid grid-cols-5 h-screen">
 
       <div className="col-span-5 h-full flex flex-col p-5">
         <h2 className='pt-7 font-bold text-2xl'>{t('requestsTitle')}</h2>

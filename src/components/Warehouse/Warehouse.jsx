@@ -36,8 +36,7 @@ function Warehouse() {
     const labelStyle = `text-custom-red ${currentLanguage === 'ar' ? 'ml-3' : 'mr-3'}`;
 
     return (
-        <div className='grid grid-cols-6 h-screen'>
-            <Sidebar />
+        <div className='grid grid-cols-5 h-screen'>
 
             <div className={`col-span-5 h-full flex flex-col ${currentLanguage === 'ar' ? 'text-right' : ''}`}>
                 <div className="relative">
@@ -62,31 +61,67 @@ function Warehouse() {
                                 <p>{warehouseData._id}</p>
                             </div>
                             <div className={fieldStyle}>
-                                <p className={labelStyle}>{t('Country')}:</p> {warehouseData.country}
+                                <p className={labelStyle}>
+                                    {currentLanguage === 'ar' ? ':' : ''}
+                                    {t('Country')}
+                                    {currentLanguage !== 'ar' ? ':' : ''}
+                                    </p> {warehouseData.country}
                             </div>
                             <div className={fieldStyle}>
-                                <p className={labelStyle}>{t('City')}:</p> {warehouseData.city}
+                                <p className={labelStyle}>
+                                    {currentLanguage === 'ar' ? ':' : ''}
+                                    {t('City')}
+                                    {currentLanguage !== 'ar' ? ':' : ''}
+                                    </p> {warehouseData.city}
                             </div>
                             <div className={fieldStyle}>
-                                <p className={labelStyle}>{t('District')}:</p> {warehouseData.district}
+                                <p className={labelStyle}>
+                                    {currentLanguage === 'ar' ? ':' : ''}
+                                    {t('District')}
+                                    {currentLanguage !== 'ar' ? ':' : ''}
+                                    </p> {warehouseData.district}
                             </div>
                             <div className={fieldStyle}>
-                                <p className={labelStyle}>{t('Street')}:</p> {warehouseData.street}
+                                <p className={labelStyle}>
+                                    {currentLanguage === 'ar' ? ':' : ''}
+                                    {t('Street')}
+                                    {currentLanguage !== 'ar' ? ':' : ''}
+                                    </p> {warehouseData.street}
                             </div>
                             <div className={fieldStyle}>
-                                <p className={labelStyle}>{t('Building')}:</p> {warehouseData.building}
+                                <p className={labelStyle}>
+                                    {currentLanguage === 'ar' ? ':' : ''}
+                                    {t('Building')}
+                                    {currentLanguage !== 'ar' ? ':' : ''}
+                                    </p> {warehouseData.building}
                             </div>
                             <div className={fieldStyle}>
-                                <p className={labelStyle}>{t('Phone')}:</p> {warehouseData.phone}
+                                <p className={labelStyle}>
+                                    {currentLanguage === 'ar' ? ':' : ''}
+                                    {t('Phone')}
+                                    {currentLanguage !== 'ar' ? ':' : ''}
+                                    </p> {warehouseData.phone}
                             </div>
                             <div className={fieldStyle}>
-                                <p className={labelStyle}>{t('Warehouse No')}:</p> {warehouseData.warehouseNo}
+                                <p className={labelStyle}>
+                                    {currentLanguage === 'ar' ? ':' : ''}
+                                    {t('Warehouse No')}
+                                    {currentLanguage !== 'ar' ? ':' : ''}
+                                    </p> {warehouseData.warehouseNo}
                             </div>
                             <div className={fieldStyle}>
-                                <p className={labelStyle}>{t('Address English')}:</p> {warehouseData.addressEnglish}
+                                <p className={labelStyle}>
+                                    {currentLanguage === 'ar' ? ':' : ''}
+                                    {t('Address English')}
+                                    {currentLanguage !== 'ar' ? ':' : ''}
+                                    </p> {warehouseData.addressEnglish}
                             </div>
                             <div className={fieldStyle}>
-                                <p className={labelStyle}>{t('Address China')}:</p> {warehouseData.addressChina}
+                                <p className={labelStyle}>
+                                    {currentLanguage === 'ar' ? ':' : ''}
+                                    {t('Address China')}
+                                    {currentLanguage !== 'ar' ? ':' : ''}
+                                    </p> {warehouseData.addressChina}
                             </div>
                         </div>
                     ) : (

@@ -3,7 +3,6 @@ import axios from 'axios';
 import { Link } from 'react-router-dom';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import img15 from '../../assets/Vector (11).png';
-import Sidebar from '../Sidebar/Sidebar';
 
 function Profile() {
   const [userData, setUserData] = useState({
@@ -44,13 +43,12 @@ function Profile() {
   }, []);
 
   return (
-    <div className="grid grid-cols-6 h-screen">
-      <Sidebar />
-
+    <div className="grid grid-cols-5 h-screen">
       <div className="col-span-3 h-full p-5">
         <div className="flex items-center space-x-4 py-4">
           <div>
-            <img src={img15} alt="Example" className="w-full h-auto" />
+            <i className="fa-regular fa-user fa-2xl"></i>
+
           </div>
           <div className="w-3/4">
             <span className="text-gray-800 font-bold text-3xl">{userData.name}</span>

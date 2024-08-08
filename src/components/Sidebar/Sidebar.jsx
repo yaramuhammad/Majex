@@ -12,7 +12,7 @@ const Sidebar = () => {
     { img: "fa-solid fa-house", text: t('Home'), link: '/' },
     { img: "fa-solid fa-tag", text: t('PriceOrder'), link: '/route2' },
     { img: "fa-solid fa-boxes-packing", text: t('Requests'), link: '/request' },
-    { img: "fa-solid fa-box", text: t('Shipments'), link: '/route4' },
+    { img: "fa-solid fa-box", text: t('Shipments'), link: '/shipment' },
     { img: "fa-solid fa-cart-shopping", text: t('Cart'), link: '/route5' },
     { img: "fa-solid fa-basket-shopping", text: t('Orders'), link: '/route6' },
     { img: "fa-solid fa-warehouse", text: t('Warehouse'), link: '/warehouse' },

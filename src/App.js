@@ -12,6 +12,7 @@ import '@fortawesome/fontawesome-free/css/all.min.css'
 import './i18n';
 import CurrentRequests from './components/Request/Request';
 import RequestsHistory from './components/Request/RequestsHistory';
+import Layout from './components/Layout/Layout';
 
 function App() {
     return (<Router basename="/Majex">
@@ -19,13 +20,15 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
-            <Route path="/profile" element={<Profile />} />
-            <Route path="/request" element={<CurrentRequests/>} />
-            <Route path="/request/history" element={<RequestsHistory/>} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/addrequest" element={<AddRequest />} />
-            <Route path="/shipment" element={<Shipment />} />
-            <Route path="/warehouse" element={<Warehouse />} />
+            <Route path="/" element={<Layout />}>
+                <Route path="/profile" element={<Profile />} />
+                <Route path="/request" element={<CurrentRequests />} />
+                <Route path="/request/history" element={<RequestsHistory />} />
+                <Route path="/addrequest" element={<AddRequest />} />
+                <Route path="/shipment" element={<Shipment />} />
+                <Route path="/warehouse" element={<Warehouse />} />
+            </Route>
         </Routes>
     </Router>
     );
