@@ -47,7 +47,7 @@ const Sidebar = () => {
         </div>
         <div>
           <span className="text-white">
-            <SidebarLang />
+            <SidebarLang  dir={currentLanguage === 'ar' ? 'r' : 'l'}/>
           </span>
         </div>
       </div>
