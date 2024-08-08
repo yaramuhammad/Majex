@@ -31,10 +31,10 @@ const Footer = () => {
                     </div>
                     <div className="w-full lg:w-1/4 flex flex-col lg:flex-col items-center lg:justify-evenly min-h-max">
                         <h2 className='text-2xl'>{t('majex')}</h2>
-                        <Link to="#" className="text-white mt-5 hover:text-red-600 text-base">{t('home')}</Link>
-                        <Link to="#" className="text-white mt-5 hover:text-red-600 text-base">{t('requests')}</Link>
+                        <Link to="/" className="text-white mt-5 hover:text-red-600 text-base">{t('home')}</Link>
+                        <Link to="/requests" className="text-white mt-5 hover:text-red-600 text-base">{t('requests')}</Link>
                         <Link to="#" className="text-white mt-5 hover:text-red-600 text-base">{t('priceOrder')}</Link>
-                        <Link to="#" className="text-white mt-5 hover:text-red-600 text-base">{t('contact')}</Link>
+                        <Link to="/contact" className="text-white mt-5 hover:text-red-600 text-base">{t('contact')}</Link>
                     </div>
                 </div>
             </div>

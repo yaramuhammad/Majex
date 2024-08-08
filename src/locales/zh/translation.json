@@ -40,5 +40,8 @@
   "Warehouse No": "仓库编号",
   "Address English": "英文地址",
   "Address China": "中文地址",
-  "Error loading data": "加载数据时出错"
+  "Error loading data": "加载数据时出错",
+  "Contact Us": "联系我们",
+  "Wechat": "微信",
+  "Whatsapp": "WhatsApp"
 }
