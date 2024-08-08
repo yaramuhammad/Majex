@@ -2,8 +2,8 @@ import React from 'react';
 import { useFormik } from 'formik';
 import Sidebar from '../Sidebar/Sidebar';
 import axios from 'axios';
-import img16 from '../../assets/Line 3.png';
-import img17 from '../../assets/Line 3 (1).png';
+// import img16 from '../../assets/Line 3.png';
+// import img17 from '../../assets/Line 3 (1).png';
 // Add your image for the button here
 
 function AddRequest() {
@@ -65,7 +65,7 @@ function AddRequest() {
                         {/* Column 2 */}
                         <div className="col-span-3 flex flex-col items-start p-4">
                             <h1 className="text-xl font-bold mb-4 text-custom-red">Add Request</h1>
-                            <img src={img16} alt="Decorative Line" className="mb-4" />
+                            {/* <img src={img16} alt="Decorative Line" className="mb-4" /> */}
                             <input
                                 type="file"
                                 onChange={handleImageUpload}
@@ -109,7 +109,7 @@ function AddRequest() {
                         {/* Column 3 */}
                         <div className="col-span-2 flex flex-col items-center p-4 mb-3">
                             <h2 className="text-xl font-bold mb-4">Multiple Request</h2>
-                            <img src={img17} alt="Decorative Line" className="mb-4" />
+                            {/* <img src={img17} alt="Decorative Line" className="mb-4" /> */}
                             <div className="mb-4 py-4">
                                 <h2 className="text-lg font-bold mb-2">Shipment Type</h2>
                                 <div className="flex space-x-4 mb-4">

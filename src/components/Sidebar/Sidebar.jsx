@@ -50,7 +50,7 @@ const Sidebar = () => {
         </div>
       </div>
 
-      <button onClick={() => { logout() }} className="text-white no-underline">
+      <button onClick={() => { logout() }} className="text-white no-underline w-full">
         <div className="w-full flex items-center space-x-4 py-2 pt-4 mb-7">
           <div>
             <i className="fa-solid fa-arrow-right-from-bracket text-white fa-lg"></i>

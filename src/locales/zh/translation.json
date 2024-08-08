@@ -13,5 +13,12 @@
   "Orders": "订单",
   "Warehouse": "仓库",
   "Contact": "联系",
-  "Logout": "登出"
+  "Logout": "登出",
+  "requestsTitle": "请求",
+  "requestsDescription": "在中国的任何商店找到您想要的任何东西。",
+  "current": "当前",
+  "history": "历史",
+  "addRequestPrompt": "现在添加您的请求！",
+  "addRequestDescription": "在中国的任何商店找到您想要的任何东西",
+  "addNewRequestButton": "+ 添加新请求"
 }

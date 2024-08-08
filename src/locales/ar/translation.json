@@ -13,5 +13,12 @@
   "Orders": "الطلبات",
   "Warehouse": "المستودع",
   "Contact": "اتصل",
-  "Logout": " تسجيل الخروج"
+  "Logout": " تسجيل الخروج",
+  "requestsTitle": "الطلبات",
+  "requestsDescription": "ابحث عن أي شيء تريد طلبه من أي متجر في الصين.",
+  "current": "الحالية",
+  "history": "السجل",
+  "addRequestPrompt": "أضف طلبك الآن!",
+  "addRequestDescription": "ابحث عن أي شيء تريد طلبه من أي متجر في الصين",
+  "addNewRequestButton": "+ أضف طلب جديد"
 }

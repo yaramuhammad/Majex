@@ -13,5 +13,12 @@
   "Orders": "Orders",
   "Warehouse": "Warehouse",
   "Contact": "Contact",
-  "Logout": "Logout"
+  "Logout": "Logout",
+  "requestsTitle": "Requests",
+  "requestsDescription": "Find anything you want to request from any store in China.",
+  "current": "Current",
+  "history": "History",
+  "addRequestPrompt": "Add your request now!",
+  "addRequestDescription": "Find anything you want to request from any store in China",
+  "addNewRequestButton": "+ Add new request"
 }
