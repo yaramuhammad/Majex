@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import SocialMediaIcons from '../Home/SocialMediaIcons';
 import SidebarLang from '../SidebarLang';
+import { logout } from '../../logout';
 
 const Sidebar = () => {
   const items = [
@@ -46,7 +47,8 @@ const Sidebar = () => {
         </div>
 
       </div>
-      <Link to="/logout" className="text-white no-underline">
+      <button onClick={()=>{logout()}}
+      className="text-white no-underline">
         <div className="w-full flex items-center space-x-4 py-2 pt-4 mb-7">
           <div >
             <i class="fa-solid fa-arrow-right-from-bracket text-white fa-lg"></i>
@@ -56,7 +58,7 @@ const Sidebar = () => {
           </div>
 
         </div>
-      </Link>
+      </button>
 
       <SocialMediaIcons />
     </div>
