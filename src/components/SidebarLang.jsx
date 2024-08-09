@@ -36,13 +36,13 @@ const SidebarLang = ({ dir }) => {
     return (
         <div className="relative" ref={dropdownRef} style={{ zIndex: "99999" }}>
             <div
-                className="flex items-center space-x-2 px-4 py-2 cursor-pointer"
+                className="flex items-center space-x-2 px-4 pb-2 cursor-pointer"
                 onClick={toggleDropdown}
             >
                 <span>{currentLanguage === 'zh' ? t('中文') : currentLanguage === 'ar' ? t('Ar') : t('En')}</span>
             </div>
             {showDropdown && (
-                <div className={`absolute ${dir === 'r' ? 'right-0' : 'left-0'} mt-2 w-48 bg-white border border-gray-200 rounded-lg shadow-lg`}>
+                <div className={`absolute ${dir === 'r' ? 'right-0' : 'left-0'} w-48 bg-white border border-gray-200 rounded-lg shadow-lg`}>
                     <div onClick={() => changeLanguage('ar')} className="block px-4 py-2 text-gray-800 hover:bg-gray-100">
                         {t('Ar')}
                     </div>
