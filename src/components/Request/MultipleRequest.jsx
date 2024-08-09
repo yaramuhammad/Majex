@@ -15,7 +15,7 @@ const validationSchema = Yup.object({
     weight: Yup.number().positive('Weight must be greater than 0').required('Weight is required'),
 });
 
-const AddRequest = () => {
+const MultipleRequest = () => {
     const { t } = useTranslation();
     const i18n = getI18n();
     const currentLanguage = i18n.language;
@@ -95,13 +95,13 @@ const AddRequest = () => {
         <div className={`py-10 lg:p-0 grid grid-cols-1 md:grid-cols-5 h-full ${currentLanguage === 'ar' ? 'text-right' : ''}`}>
             <div className={`col-span-1 md:col-span-5 h-full flex flex-col p-5 ${currentLanguage === 'ar' ? 'text-right' : ''}`}>
                 <div className={`flex flex-col md:flex-row justify-evenly mt-4 ${currentLanguage === 'ar' ? 'md:flex-row-reverse' : ''}`}>
-                    <div className="w-full md:w-1/4 text-center mb-4 md:mb-0 md:ml-10 border-b-2 border-red-900">
-                        <p className="text-lg md:text-2xl font-bold text-custom-red">{t('addRequest.title')}</p>
-                    </div>
-                    <div className="w-full md:w-1/4 text-center border-b-2 border-black">
-                        <Link to='/multiple-request'>
-                            <p className="text-lg md:text-2xl font-bold">{t('addRequest.uploadMultipleProducts')}</p>
+                    <div className="w-full md:w-1/4 text-center mb-4 md:mb-0 md:ml-10 border-b-2 border-black">
+                        <Link to='/add-request'>
+                            <p className="text-lg md:text-2xl font-bold ">{t('addRequest.title')}</p>
                         </Link>
+                    </div>
+                    <div className="w-full md:w-1/4 text-center border-b-2 border-red-900">
+                        <p className="text-lg md:text-2xl font-bold text-custom-red">{t('addRequest.uploadMultipleProducts')}</p>
                     </div>
                 </div>
 
@@ -206,4 +206,4 @@ const AddRequest = () => {
     );
 };
 
-export default AddRequest;
+export default MultipleRequest;

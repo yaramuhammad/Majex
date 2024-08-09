@@ -14,6 +14,7 @@ import './i18n';
 import CurrentRequests from './components/Request/Request';
 import RequestsHistory from './components/Request/RequestsHistory';
 import Layout from './components/Layout/Layout';
+import MultipleRequest from './components/Request/MultipleRequest';
 
 function App() {
     return (<Router basename="/Majex">
@@ -26,7 +27,8 @@ function App() {
                 <Route path="/profile" element={<Profile />} />
                 <Route path="/request" element={<CurrentRequests />} />
                 <Route path="/request/history" element={<RequestsHistory />} />
-                <Route path="/addrequest" element={<AddRequest />} />
+                <Route path="/add-request" element={<AddRequest />} />
+                <Route path="/multiple-request" element={<MultipleRequest />} />
                 <Route path="/shipment" element={<Shipment />} />
                 <Route path="/warehouse" element={<Warehouse />} />
                 <Route path="/addshipment" element={<Addshipment/> } />

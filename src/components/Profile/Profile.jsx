@@ -58,7 +58,7 @@ function Profile() {
   return (
     <div className="grid grid-cols-1 lg:grid-cols-5 h-full lg:h-screen">
       <div className={`lg:col-span-3 p-10 ${currentLanguage==='ar'? 'order-2' : ''}`}>
-        <div className={`flex flex-col lg:flex-row items-center lg:space-x-4 py-4 ${currentLanguage==='ar'? 'flex-row-reverse space-x-reverse' : ''}`}>
+        <div className={`flex flex-col lg:flex-row items-center lg:space-x-4 py-4 ${currentLanguage==='ar'? 'lg:flex-row-reverse lg:space-x-reverse' : ''}`}>
           <div className="mb-4 lg:mb-0">
             <i className="fa-regular fa-user fa-2xl"></i>
           </div>
