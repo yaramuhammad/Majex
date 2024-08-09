@@ -115,7 +115,6 @@
     "color": "اللون",
     "note": "ملاحظة",
     "confirmRequest": "تأكيد الطلب",
-<<<<<<< HEAD
     "dropImageOr": "",
     "browse": ""
   },
@@ -132,9 +131,5 @@
     "confirmShipment": "تأكيد الشحن",
     "dropImageOr": "",
     "browse": ""
-=======
-    "dropImageOr": "قم بسحب الصورة أو",
-    "browse": "تصفح"
->>>>>>> ea54ebbf252422d7c0ec78d374b49c6570442a02
   }
 }

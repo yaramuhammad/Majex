@@ -63,6 +63,9 @@
   "An error occurred. Please try again.": "发生错误。请再试一次。",
   "terms": "条款",
   "conditions": "条件",
+  "You agree to our": "",
+  "and": "",
+  "Hey, There!": "",
   "Name is required": "姓名是必需的",
   "Invalid email address": "无效的电子邮件地址",
   "Email is required": "电子邮件是必需的",
@@ -72,6 +75,7 @@
   "Password Confirmation is required": "密码确认是必需的",
   "Mobile number is required": "手机号码是必需的",
   "Language is required": "语言是必需的",
+  "Forgot your password?": "",
   "description": "迅速满足客户需求，提供清晰沟通，有效解决问题。通过同理心、响应性以及超越期望的承诺，优先考虑积极的客户体验，培养持久的关系。",
   "availability": "服务全天候24小时，每周7天提供高水平的舒适。",
   "fastestService": "最快的服务",
@@ -92,13 +96,9 @@
   "vipPackages": "VIP套餐",
   "subscriptionPlan": "订阅计划",
   "monthsLeft": "剩余3个月",
-  "You agree to our": "您同意我们的",
-  "and": "和",
-  "Hey, There!": "你好！",
-  "Forgot your password?": "忘记密码？",
-  "Delete": "删除",
-  "Details": "详情",
-  "Pending": "待处理",
+  "Delete": "",
+  "Details": "",
+  "Pending": "",
   "addRequest": {
     "title": "新增请求",
     "uploadMultipleProducts": "上传多个产品",
@@ -115,7 +115,6 @@
     "color": "颜色",
     "note": "备注",
     "confirmRequest": "确认请求",
-<<<<<<< HEAD
     "dropImageOr": "",
     "browse": ""
   },
@@ -130,8 +129,6 @@
     "Recivingaddress": "收货地址",
     "note": "备注",
     "confirmShipment": "确认货件",
-=======
->>>>>>> ea54ebbf252422d7c0ec78d374b49c6570442a02
     "dropImageOr": "拖放图片或",
     "browse": "浏览"
   }
