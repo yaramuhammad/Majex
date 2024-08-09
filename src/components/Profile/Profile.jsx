@@ -56,14 +56,14 @@ function Profile() {
   }
 
   return (
-    <div className="grid grid-cols-5 h-screen">
-      <div className={`col-span-3 h-full p-5 ${currentLanguage==='ar'? 'order-2' : ''}`}>
-        <div className={`flex items-center space-x-4 py-4 ${currentLanguage==='ar'? 'flex-row-reverse space-x-reverse' : ''}`}>
-          <div>
+    <div className="grid grid-cols-1 lg:grid-cols-5 h-full lg:h-screen">
+      <div className={`lg:col-span-3 p-10 ${currentLanguage==='ar'? 'order-2' : ''}`}>
+        <div className={`flex flex-col lg:flex-row items-center lg:space-x-4 py-4 ${currentLanguage==='ar'? 'flex-row-reverse space-x-reverse' : ''}`}>
+          <div className="mb-4 lg:mb-0">
             <i className="fa-regular fa-user fa-2xl"></i>
           </div>
           <div>
-            <span className="text-gray-800 font-bold text-3xl">{userData.name}</span>
+            <span className="text-gray-800 font-bold text-2xl lg:text-3xl">{userData.name}</span>
           </div>
         </div>
         <form className="space-y-4">
@@ -94,12 +94,12 @@ function Profile() {
         </form>
       </div>
 
-      <div className="col-span-2 h-full px-5">
-        <div className='mt-10'></div>
-        <div className='p-10'></div>
+      <div className="lg:col-span-2 h-full p-5">
+        <div className="mt-10 "></div>
+        <div className="p-10"></div>
 
-        <div className={`bg-[#f3f3f3] flex px-5 py-3 rounded-lg  ${currentLanguage==='ar'? ' flex-row-reverse' : ''}`}>
-          <div className="w-1/2 pr-2">
+        <div className={`bg-[#f3f3f3] flex flex-col lg:flex-row lg:items-end px-5 py-3 rounded-lg ${currentLanguage==='ar'? 'flex-row-reverse' : ''}`}>
+          <div className="w-full lg:w-1/2 pr-0 lg:pr-2 mb-4 lg:mb-0">
             <div className="flex flex-col items-center">
               <img src={require('./../../assets/crown.png')} alt="package-logo" className="mb-2" />
               <div className="text-left">
@@ -108,7 +108,7 @@ function Profile() {
               </div>
             </div>
           </div>
-          <div className="w-1/2 pl-2 pt-5 mt-2">
+          <div className="w-full lg:w-1/2 pl-0 lg:pl-2">
             <div className="flex flex-col items-center">
               <p className="text-gray-800 font-bold">{t('subscriptionPlan')}</p>
               <p className="text-gray-800">{t('monthsLeft')}</p>
