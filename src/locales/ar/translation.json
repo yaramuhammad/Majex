@@ -117,5 +117,19 @@
     "confirmRequest": "تأكيد الطلب",
     "dropImageOr": "",
     "browse": ""
+  },
+  "addShipment": {
+    "title": "أضف شحنة جديد",
+    "ShipmentImage":"صورة الشحنة ",
+    "onlyOneImage": "صورة واحدة فقط",
+    "shipmentType": "نوع الشحنة",
+    "overAir": "جوي",
+    "overSea": "بحري",
+    "supplieraddress": "عنوان المورد",
+    "Recivingaddress": "عنوان الاستلام", 
+    "note": "ملاحظة",
+    "confirmShipment": "تأكيد الشحن",
+    "dropImageOr": "",
+    "browse": ""
   }
 }

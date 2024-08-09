@@ -117,5 +117,19 @@
     "confirmRequest": "确认请求",
     "dropImageOr": "",
     "browse": ""
+  },
+  "addShipment": {
+    "title": "添加新货件",
+    "ShipmentImage": "货件图片",
+    "onlyOneImage": "仅一张图片",
+    "shipmentType": "货运类型",
+    "overAir": "空运",
+    "overSea": "海运",
+    "supplieraddress": "供应商地址",
+    "Recivingaddress": "收货地址",
+    "note": "备注",
+    "confirmShipment": "确认货件",
+    "dropImageOr": "拖放图片或",
+    "browse": "浏览"
   }
 }

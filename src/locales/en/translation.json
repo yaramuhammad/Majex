@@ -118,5 +118,19 @@
     "confirmRequest": "Confirm request",
     "dropImageOr": "Drop image or",
     "browse": "browse"
+  },
+  "addShipment": {
+    "title": "Add New Shipment",
+    "ShipmentImage": "Shipment image",
+    "onlyOneImage": "Only one image",
+    "shipmentType": "Shipment type",
+    "overAir": "Over air",
+    "overSea": "Over sea",
+    "supplieraddress": "Supplier Address",
+    "Recivingaddress": "Reciving Address",
+    "note": "Note",
+    "confirmShipment": "Confirm Shipment",
+    "dropImageOr": "Drop image or",
+    "browse": "browse"
   }
 }

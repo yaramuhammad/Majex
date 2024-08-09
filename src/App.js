@@ -5,6 +5,7 @@ import Register from './components/Auth/Register';
 import Contact from './components/Contact/Contact';
 import Profile from './components/Profile/Profile';
 import Shipment from './components/Shipment/Shipment';
+import Addshipment from './components/Shipment/Addshipment';
 import Warehouse from './components/Warehouse/Warehouse';
 import AddRequest from './components/Request/AddRequest';
 import './index.css';
@@ -28,6 +29,8 @@ function App() {
                 <Route path="/addrequest" element={<AddRequest />} />
                 <Route path="/shipment" element={<Shipment />} />
                 <Route path="/warehouse" element={<Warehouse />} />
+                <Route path="/addshipment" element={<Addshipment/> } />
+
             </Route>
         </Routes>
     </Router>

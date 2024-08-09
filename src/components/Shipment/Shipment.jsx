@@ -18,7 +18,7 @@ function Shipment() {
             <span className='font-bold mb-2'>Add Your Shipment</span>
             <span style={{ color: '#4B4B4B' }}>Ship anything you want from china.</span>
           </div>
-          <Link to="/addrequest">
+          <Link to="/addshipment">
             <button className="mt-4 px-20 py-3 bg-custom-red text-white rounded">
               + Add New Shipment
             </button>
