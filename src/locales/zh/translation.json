@@ -95,5 +95,8 @@
   "enterInterests": "输入你的兴趣",
   "vipPackages": "VIP套餐",
   "subscriptionPlan": "订阅计划",
-  "monthsLeft": "剩余3个月"
+  "monthsLeft": "剩余3个月",
+  "Delete": "",
+  "Details": "",
+  "Pending": ""
 }

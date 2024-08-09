@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, getI18n } from 'react-i18next';
 import img15 from '../../assets/Checking boxes-bro 1.png';
 import RequestCard from './RequestCard';
 import toast from 'react-hot-toast';
@@ -11,6 +11,8 @@ function CurrentRequests() {
   const { t } = useTranslation();
   const [requests, setRequests] = useState([]);
   const [loading, setLoading] = useState(true);
+  const i18n = getI18n();
+  const currentLanguage = i18n.language; 
 
   const fetchRequests = async () => {
     setLoading(true);
@@ -53,13 +55,13 @@ function CurrentRequests() {
   return (
     <div className="grid grid-cols-5 h-screen">
 
-      <div className="col-span-5 h-full flex flex-col p-5">
+      <div className={`col-span-5 h-full flex flex-col p-5 w-full ${currentLanguage==='ar'? ' text-right' : ''}`}>
         <h2 className='pt-7 font-bold text-2xl'>{t('requestsTitle')}</h2>
         <p style={{ color: '#4B4B4B' }} className='pt-2 text-lg'>
           {t('requestsDescription')}
         </p>
 
-        <div className="flex justify-evenly mt-4">
+        <div className={`flex justify-evenly mt-4  ${currentLanguage==='ar'? ' flex-row-reverse' : ''}`}>
           <div className="w-1/4 text-center ml-10 border border-b-2 border-red-900 border-r-0 border-l-0 border-t-0">
             <p className="text-2xl font-bold text-custom-red">{t('current')}</p>
           </div>

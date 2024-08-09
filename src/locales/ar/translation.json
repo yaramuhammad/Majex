@@ -20,7 +20,7 @@
   "history": "السجل",
   "addRequestPrompt": "أضف طلبك الآن!",
   "addRequestDescription": "ابحث عن أي شيء تريد طلبه من أي متجر في الصين",
-  "addNewRequestButton": "+ أضف طلب جديد",
+  "addNewRequestButton": "+  أضف طلب جديد",
   "TrackYourOrder": "تابع الطلب الخاص بك",
   "Track": "تابع",
   "footerTitle": "شريكك الموثوق في اللوجستيات",
@@ -95,5 +95,8 @@
   "enterInterests": "أدخل اهتماماتك",
   "vipPackages": "الباقات المميزة",
   "subscriptionPlan": "خطة الاشتراك",
-  "monthsLeft": "تبقى 3 أشهر"
+  "monthsLeft": "تبقى 3 أشهر",
+  "Delete":"الحذف",
+  "Details":"التفاصيل",
+  "Pending":"قيد الانتظار"
 }

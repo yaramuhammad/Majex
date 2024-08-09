@@ -95,5 +95,8 @@
   "enterInterests": "Enter your interests",
   "vipPackages": "VIP PACKAGES",
   "subscriptionPlan": "Subscription Plan",
-  "monthsLeft": "3 months left"
+  "monthsLeft": "3 months left",
+  "Delete": "Delete",
+  "Details": "Details",
+  "Pending": "Pending"
 }
