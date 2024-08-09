@@ -115,7 +115,7 @@
     "color": "اللون",
     "note": "ملاحظة",
     "confirmRequest": "تأكيد الطلب",
-    "dropImageOr": "",
-    "browse": ""
+    "dropImageOr": "قم بسحب الصورة أو",
+    "browse": "تصفح"
   }
 }
