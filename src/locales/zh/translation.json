@@ -80,5 +80,20 @@
   "availability": "服务全天候24小时，每周7天提供高水平的舒适。",
   "fastestService": "最快的服务",
   "affordablePrices": "实惠的价格",
-  "safetyAndSecurity": "安全和保障"
+  "safetyAndSecurity": "安全和保障",
+  "name": "名字",
+  "email": "电子邮件",
+  "password": "密码",
+  "mobileNumber": "手机号码",
+  "whatsappNumber": "WhatsApp号码",
+  "interests": "兴趣",
+  "enterName": "输入你的名字",
+  "enterEmail": "输入你的电子邮件",
+  "enterPassword": "输入你的密码",
+  "enterMobileNumber": "输入你的手机号码",
+  "enterWhatsappNumber": "输入你的WhatsApp号码",
+  "enterInterests": "输入你的兴趣",
+  "vipPackages": "VIP套餐",
+  "subscriptionPlan": "订阅计划",
+  "monthsLeft": "剩余3个月"
 }

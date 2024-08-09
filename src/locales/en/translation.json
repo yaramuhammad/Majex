@@ -80,5 +80,20 @@
   "availability": "Services are available 24 hours a day and 7 days a week to provide customers with a high level of comfort.",
   "fastestService": "Fastest Service",
   "affordablePrices": "Affordable Prices",
-  "safetyAndSecurity": "Safety and Security"
+  "safetyAndSecurity": "Safety and Security",
+  "name": "Name",
+  "email": "Email",
+  "password": "Password",
+  "mobileNumber": "Mobile Number",
+  "whatsappNumber": "WhatsApp Number",
+  "interests": "Interests",
+  "enterName": "Enter your name",
+  "enterEmail": "Enter your email",
+  "enterPassword": "Enter your password",
+  "enterMobileNumber": "Enter your mobile number",
+  "enterWhatsappNumber": "Enter your WhatsApp number",
+  "enterInterests": "Enter your interests",
+  "vipPackages": "VIP PACKAGES",
+  "subscriptionPlan": "Subscription Plan",
+  "monthsLeft": "3 months left"
 }
