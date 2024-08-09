@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Majex/static/css/main.4af0f4dd.css",
-    "main.js": "/Majex/static/js/main.be94cb61.js",
+    "main.css": "/Majex/static/css/main.387dea39.css",
+    "main.js": "/Majex/static/js/main.ffa28b09.js",
     "static/media/hero.png": "/Majex/static/media/hero.01ccd57b5ab18e7b1388.png",
     "static/media/fa-solid-900.ttf": "/Majex/static/media/fa-solid-900.07ed6d5fa32c1d54af0f.ttf",
     "static/media/customercare.png": "/Majex/static/media/customercare.b9aeea09abcfd548edd2.png",
@@ -23,11 +23,11 @@
     "static/media/fa-v4compatibility.woff2": "/Majex/static/media/fa-v4compatibility.6cfec8414be20e2c3426.woff2",
     "index.html": "/Majex/index.html",
     "static/media/getFetch.cjs": "/Majex/static/media/getFetch.c4cca45e22bc1b2c7d0d.cjs",
-    "main.4af0f4dd.css.map": "/Majex/static/css/main.4af0f4dd.css.map",
-    "main.be94cb61.js.map": "/Majex/static/js/main.be94cb61.js.map"
+    "main.387dea39.css.map": "/Majex/static/css/main.387dea39.css.map",
+    "main.ffa28b09.js.map": "/Majex/static/js/main.ffa28b09.js.map"
   },
   "entrypoints": [
-    "static/css/main.4af0f4dd.css",
-    "static/js/main.be94cb61.js"
+    "static/css/main.387dea39.css",
+    "static/js/main.ffa28b09.js"
   ]
 }
