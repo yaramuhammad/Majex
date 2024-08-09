@@ -53,21 +53,21 @@ function CurrentRequests() {
   };
 
   return (
-    <div className="grid grid-cols-5 h-screen">
+    <div className="grid grid-cols-1 md:grid-cols-5 h-full md:h-screen">
 
-      <div className={`col-span-5 h-full flex flex-col p-5 w-full ${currentLanguage==='ar'? ' text-right' : ''}`}>
-        <h2 className='pt-7 font-bold text-2xl'>{t('requestsTitle')}</h2>
-        <p style={{ color: '#4B4B4B' }} className='pt-2 text-lg'>
+      <div className={`col-span-1 md:col-span-5 h-full flex flex-col p-5 w-full ${currentLanguage==='ar'? 'text-right' : ''}`}>
+        <h2 className="pt-7 font-bold text-xl md:text-2xl">{t('requestsTitle')}</h2>
+        <p style={{ color: '#4B4B4B' }} className="pt-2 text-base md:text-lg">
           {t('requestsDescription')}
         </p>
 
-        <div className={`flex justify-evenly mt-4  ${currentLanguage==='ar'? ' flex-row-reverse' : ''}`}>
-          <div className="w-1/4 text-center ml-10 border border-b-2 border-red-900 border-r-0 border-l-0 border-t-0">
-            <p className="text-2xl font-bold text-custom-red">{t('current')}</p>
+        <div className={`flex flex-col md:flex-row justify-evenly mt-4 ${currentLanguage==='ar'? 'md:flex-row-reverse' : ''}`}>
+          <div className="w-full md:w-1/4 text-center mb-4 md:mb-0 md:ml-10 border-b-2 border-red-900">
+            <p className="text-lg md:text-2xl font-bold text-custom-red">{t('current')}</p>
           </div>
-          <div className="w-1/4 text-center ml-10 border border-b-2 border-black border-r-0 border-l-0 border-t-0">
+          <div className="w-full md:w-1/4 text-center border-b-2 border-black">
             <Link to='/request/history'>
-              <p className="text-2xl font-bold">{t('history')}</p>
+              <p className="text-lg md:text-2xl font-bold">{t('history')}</p>
             </Link>
           </div>
         </div>
@@ -82,15 +82,15 @@ function CurrentRequests() {
           </div>
         ) : (
           <div className="flex flex-col items-center mt-10">
-            <img src={img15} alt="Central" className="mb-5" />
+            <img src={img15} alt="Central" className="mb-5 w-full max-w-xs md:max-w-md" />
             <div className="flex flex-col items-center text-center">
-              <span className='font-bold text-xl mb-2'>{t('addRequestPrompt')}</span>
-              <span style={{ color: '#4B4B4B' }} className="text-lg">
+              <span className="font-bold text-lg md:text-xl mb-2">{t('addRequestPrompt')}</span>
+              <span style={{ color: '#4B4B4B' }} className="text-base md:text-lg">
                 {t('addRequestDescription')}
               </span>
             </div>
             <Link to="/addrequest">
-              <button className="mt-6 px-12 py-3 bg-custom-red text-white rounded text-lg">
+              <button className="mt-6 px-8 md:px-12 py-2 md:py-3 bg-custom-red text-white rounded text-base md:text-lg">
                 {t('addNewRequestButton')}
               </button>
             </Link>
