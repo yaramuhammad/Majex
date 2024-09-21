@@ -1,0 +1,109 @@
+{
+  "navbar": {
+    "home": "首页",
+    "priceOrder": "价格 / 订单",
+    "requests": "请求",
+    "shipments": "货运",
+    "shopNow": "立即购物",
+    "services": "服务",
+    "shipmentPrices": "运费",
+    "lcl": "小于整箱",
+    "fcl": "整箱",
+    "profile": "个人资料",
+    "register": "注册",
+    "login": "登录",
+    "logout": "注销",
+    "ar": "阿拉伯语",
+    "en": "英语",
+    "中文": "中文"
+  },
+  "footer": {
+    "footerTitle": "您可信赖的物流合作伙伴",
+    "footerDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare cursus sed nunc eget dictum.",
+    "searchPlaceholder": "搜索",
+    "majex": "Majex",
+    "contact": "联系",
+    "home": "首页",
+    "priceOrder": "价格 / 订单",
+    "requests": "请求"
+  },
+  "homeSearch": {
+    "trackYourOrder": "跟踪您的订单",
+    "track": "跟踪"
+  },
+  "stats": {
+    "requests": "请求",
+    "shipments": "货运",
+    "products": "产品"
+  },
+  "customerService": {
+    "description": "快速满足客户需求，提供清晰的沟通，并有效解决问题。专注于通过同情、快速响应和超越期望的承诺提供积极的客户体验，从而培养长期关系。",
+    "availability": "服务全天候提供，方便客户。",
+    "fastestService": "最快服务",
+    "affordablePrices": "价格合理",
+    "safetyAndSecurity": "安全与保障"
+  },
+
+  "services": {
+    "title1": "空运货物",
+    "description1": "我们在打折价格下提供快速运输选项方面表现出色。",
+    "title2": "海运货物",
+    "description2": "开发我们的运输服务或运输到客户所在国的港口。",
+    "title3": "仓储",
+    "description3": "这是我们自豪地提供给成功合作伙伴和尊贵客户的服务之一。"
+  },
+  "packages": {
+    "header": {
+      "title": "准备开始跨越边界吧！",
+      "subtitle": "为支持中国进口业务中不同人士的需求，我们提供了3个计划来满足您的所有需求"
+    },
+    "list": [
+      {
+        "title": "免费套餐",
+        "price": "无限制",
+        "features": [
+          "采购产品并从供应商获取报价。",
+          "订购产品样品。",
+          "咨询进出口、证书等。",
+          "仓库免费4天",
+          "空运费每公斤36里亚尔",
+          "佣金10%",
+          "海运起价为每立方米1500"
+        ]
+      },
+      {
+        "title": "Plus套餐",
+        "price": "500.00 里亚尔",
+        "features": [
+          "采购产品并从供应商获取报价。",
+          "跟进生产。",
+          "定制和设计产品和包装。",
+          "提供私人品牌解决方案。",
+          "一般质量检查。",
+          "免费仓库20天。",
+          "空运每公斤34里亚尔。",
+          "每立方米1350里亚尔的海运。",
+          "佣金9~7%"
+        ]
+      },
+      {
+        "title": "VIP套餐",
+        "price": "1875.00 里亚尔",
+        "features": [
+          "跟进生产。",
+          "采购产品并从供应商获取报价。",
+          "定制产品和包装。",
+          "提供私人品牌解决方案。",
+          "专业的电子商务产品摄影。 FBA，FBN",
+          "质量检查。",
+          "一个月免费仓库和产品组装。",
+          "通过快递安排门到门交付。",
+          "每公斤空运33里亚尔。",
+          "每立方米1300里亚尔的海运",
+          "佣金7~5%"
+        ]
+      }
+    ],
+    "button": "立即开始"
+  }
+}

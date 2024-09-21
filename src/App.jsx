@@ -1,7 +1,21 @@
+import HomePage from "./Pages/Home/HomePage";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { getI18n } from "react-i18next";
+
 export default function App() {
-  return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
-  )
+  const i18n = getI18n();
+  const currentLanguage = i18n.language;
+  document.documentElement.setAttribute(
+    "dir",
+    currentLanguage === "ar" ? "rtl" : "ltr"
+  );
+
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <HomePage />,
+    },
+  ]);
+
+  return <RouterProvider router={router} />;
 }

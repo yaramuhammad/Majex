@@ -1,0 +1,110 @@
+{
+  "navbar": {
+    "home": "Home",
+    "priceOrder": "Price / Order",
+    "requests": "Requests",
+    "shipments": "Shipments",
+    "shopNow": "Shop Now",
+    "services": "Services",
+    "shipmentPrices": "Shipment Prices",
+    "lcl": "Less than Container Load",
+    "fcl": "Full Container Load",
+    "profile": "Profile",
+    "register": "Register",
+    "login": "Login",
+    "logout": "Logout",
+    "ar": "Arabic",
+    "en": "English",
+    "中文": "Chinese"
+  },
+  "footer": {
+    "footerTitle": "Your Trusted Partner in Logistics",
+    "footerDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare cursus sed nunc eget dictum.",
+    "searchPlaceholder": "Search",
+    "majex": "Majex",
+    "contact": "Contact",
+    "home": "Home",
+    "priceOrder": "Price / Order",
+    "requests": "Requests"
+  },
+  "homeSearch": {
+    "trackYourOrder": "Track Your Order",
+    "track": "Track"
+  },
+  "stats": {
+    "requests": "Requests",
+    "shipments": "Shipments",
+    "products": "Products"
+  },
+  "customerService": {
+    "description": "Quickly addressing customer needs, providing clear communication, and effectively resolving issues. Focuses on delivering a positive customer experience through empathy, quick responsiveness, and a commitment to exceed expectations, fostering long-term relationships.",
+    "availability": "Services are available 24 hours a day, 7 days a week to provide a high level of convenience for customers.",
+    "fastestService": "Fastest Service",
+    "affordablePrices": "Affordable Prices",
+    "safetyAndSecurity": "Safety and Security"
+  },
+
+  "services": {
+    "title1": "Freight Air",
+    "description1": "We excel in express transportation options at discounted prices.",
+    "title2": "Freight Sea",
+    "description2": "Develop our shipping service or shipping to the port of the customer’s country.",
+    "title3": "Warehousing",
+    "description3": "One of the services that we are proud to offer to our success partners and valued customers."
+  },
+
+  "packages": {
+    "header": {
+      "title": "Ready to start crossing borders!",
+      "subtitle": "For supporting different people’s needs in China importing business, we offered 3 plans to meet all your needs"
+    },
+    "list": [
+      {
+        "title": "Free package",
+        "price": "Unlimited",
+        "features": [
+          "Sourcing products and obtaining quotes from suppliers.",
+          "Order product samples.",
+          "Consult about import and export, certificates, etc.",
+          "Warehouse free 4 days",
+          "Air freight charges 36 SAR per kilo",
+          "Commission 10%",
+          "Sea freight starts from 1500 for 1 CBM."
+        ]
+      },
+      {
+        "title": "Plus package",
+        "price": "500.00 SAR",
+        "features": [
+          "Sourcing products and getting quotes from suppliers.",
+          "Follow up production.",
+          "Customize and design products and packages.",
+          "Offer private brand solutions.",
+          "General quality check.",
+          "Free warehouse 20 days.",
+          "Air freight at 34 riyals per kilo.",
+          "1350 riyals sea for 1 CBM.",
+          "Commission 9~7%"
+        ]
+      },
+      {
+        "title": "VIP packages",
+        "price": "1875.00 SAR",
+        "features": [
+          "Follow up production.",
+          "Sourcing products and obtaining quotations from suppliers.",
+          "Customized products and packages.",
+          "Offer private brand solutions.",
+          "Professional product photography for e-commerce. FBA, FBN",
+          "Quality check.",
+          "Month free warehouse and product assembly.",
+          "Arrange door-to-door delivery via courier.",
+          "33 riyals air freight per kilo.",
+          "1300 Saudi riyals for sea freight for CBM",
+          "Commission 7~5%"
+        ]
+      }
+    ],
+    "button": "Get Started"
+  }
+}
