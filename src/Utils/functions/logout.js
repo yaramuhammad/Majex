@@ -1,5 +1,4 @@
-export const logout = () => {
+export const Logout = () => {
     localStorage.removeItem('token');
-
-    window.location.href = '/Majex';
+    window.location.href = '/';
 };

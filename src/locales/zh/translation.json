@@ -105,5 +105,38 @@
       }
     ],
     "button": "立即开始"
+  },
+  "auth": {
+    "register": "注册",
+    "login": "登录",
+    "ar": "阿拉伯语",
+    "en": "英语",
+    "中文": "中文",
+    "name": "姓名",
+    "email": "电子邮件",
+    "passwordConfirmation": "密码确认",
+    "You must accept the terms and conditions": "您必须接受条款和条件",
+    "Preferred Language": "首选语言",
+    "Sign up": "注册",
+    "Registered Successfully": "注册成功",
+    "Logged in Successfully": "登录成功",
+    "An error occurred. Please try again.": "发生错误。请再试一次。",
+    "terms": "条款",
+    "conditions": "条件",
+    "You agree to our": "您同意我们的",
+    "and": "和",
+    "heyThere": "你好!",
+    "Name is required": "姓名是必需的",
+    "Invalid email address": "无效的电子邮件地址",
+    "Email is required": "电子邮件是必需的",
+    "Password must be at least 8 characters": "密码必须至少为8个字符",
+    "Password is required": "密码是必需的",
+    "Password Confirmation is required": "密码确认是必需的",
+    "Mobile number is required": "手机号码是必需的",
+    "Forgot your password?": "忘记密码？",
+    "password": "密码",
+    "mobileNumber": "手机号码",
+    "whatsappNumber": "WhatsApp号码",
+    "Passwords must match": "密码必须匹配"
   }
 }

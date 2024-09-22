@@ -106,5 +106,39 @@
       }
     ],
     "button": "Get Started"
+  },
+
+  "auth": {
+    "register": "Register",
+    "login": "Login",
+    "ar": "Arabic",
+    "en": "English",
+    "中文": "Chinese",
+    "name": "Name",
+    "email": "Email",
+    "passwordConfirmation": "Password Confirmation",
+    "You must accept the terms and conditions": "You must accept the terms and conditions",
+    "Preferred Language": "Preferred Language",
+    "Sign up": "Sign up",
+    "Registered Successfully": "Registered Successfully",
+    "Logged in Successfully": "Logged in Successfully",
+    "An error occurred. Please try again.": "An error occurred. Please try again.",
+    "terms": "Terms",
+    "conditions": "Conditions",
+    "You agree to our": "You agree to our",
+    "and": "and",
+    "heyThere": "Hey there!",
+    "Name is required": "Name is required",
+    "Invalid email address": "Invalid email address",
+    "Email is required": "Email is required",
+    "Password must be at least 8 characters": "Password must be at least 8 characters",
+    "Password is required": "Password is required",
+    "Password Confirmation is required": "Password Confirmation is required",
+    "Mobile number is required": "Mobile number is required",
+    "Forgot your password?": "Forgot your password?",
+    "password": "Password",
+    "mobileNumber": "Mobile Number",
+    "whatsappNumber": "WhatsApp Number",
+    "Passwords must match": "Passwords must match"
   }
 }

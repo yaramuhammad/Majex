@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUserCircle } from "@fortawesome/free-solid-svg-icons";
-import { logout } from "./../../Utils/functions/logout";
+import { Logout } from "../../Utils/functions/Logout";
 import { useTranslation } from "react-i18next";
 
 const UserDropdown = ({ isAuthenticated, closeSidebar }) => {
@@ -38,7 +38,7 @@ const UserDropdown = ({ isAuthenticated, closeSidebar }) => {
       {showDropdown && (
         <div
           className="absolute mt-2 w-48 bg-white border border-gray-200 rounded-lg shadow-lg
-          rtl:right-0 ltr:left-0 rtl:xl:left-0 ltr:xl:right-0 bottom-8 xl:top-[100%] xl:bottom-auto"
+          rtl:right-0 ltr:left-0 rtl:xl:left-0 ltr:xl:right-0 rtl:xl:right-auto ltr:xl:left-auto bottom-8 xl:top-[100%] xl:bottom-auto"
         >
           {isAuthenticated ? (
             <>
@@ -51,9 +51,9 @@ const UserDropdown = ({ isAuthenticated, closeSidebar }) => {
               </Link>
               <button
                 type="button"
-                className="w-full text-left px-4 py-2 text-gray-800 hover:bg-gray-100"
+                className="w-full text-left rtl:text-right px-4 py-2 text-gray-800 hover:bg-gray-100"
                 onClick={() => {
-                  logout();
+                  Logout();
                   closeSidebar();
                 }}
               >
@@ -63,14 +63,14 @@ const UserDropdown = ({ isAuthenticated, closeSidebar }) => {
           ) : (
             <>
               <Link
-                to="/register"
+                to="/authentication/register"
                 className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
                 onClick={closeSidebar}
               >
                 {t("navbar.register")}
               </Link>
               <Link
-                to="/login"
+                to="/authentication/login"
                 className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
                 onClick={closeSidebar}
               >
