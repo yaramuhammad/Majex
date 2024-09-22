@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUserCircle } from "@fortawesome/free-solid-svg-icons";
-import { Logout } from "./../../Utils/functions/Logout";
+import { Logout } from "../../Utils/functions/logout";
 import { useTranslation } from "react-i18next";
 
 const UserDropdown = ({ isAuthenticated, closeSidebar }) => {
