@@ -3,7 +3,7 @@ import axios from "axios";
 export const Login = async (values,setErrors) => {
   try {
     const response = await axios.post(
-      "https://logistics-solution-wheat.vercel.app/login",
+      `${import.meta.env.VITE_API_URL}/login`,
       values,
       {
         headers: {
