@@ -14,7 +14,7 @@ const AuthPage = () => {
   return (
     <div className="flex flex-col md:flex-row h-screen py-10 overflow-y-auto">
       <div className="fixed top-0 left-0 md:left-1/2 md:rtl:right-1/2 md:rtl:left-auto p-5 z-50 bg-white md:w-1/2 shadow w-full flex justify-end xl:bg-transparent xl:shadow-none">
-        <LanguageDropdown dir="down" />
+        <LanguageDropdown />
       </div>
       <AuthSidePanel />
       <div className="w-full md:w-1/2 flex justify-center items-center bg-white">

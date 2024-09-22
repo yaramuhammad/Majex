@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import { useTranslation, getI18n } from "react-i18next";
 
-const LanguageDropdown = ({ dir = "up",closeSidebar = () => {} }) => {
+const LanguageDropdown = ({ dir = "down",closeSidebar = () => {} }) => {
   const { t, i18n } = useTranslation();
   const [showDropdown, setShowDropdown] = useState(false);
   const dropdownRef = useRef(null);

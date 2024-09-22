@@ -20,7 +20,7 @@ const Footer = () => {
                                 size="xl"
                                 className='text-gray-400'
                             />
-                            <input type="text" className='border-none outline-none w-full ml-2' placeholder={t('footer.searchPlaceholder')} />
+                            <input type="text" className='border-none outline-none w-full ml-2 rtl:mr-2' placeholder={t('footer.searchPlaceholder')} />
                         </form>
                         <SocialMediaIcons/>
                     </div>

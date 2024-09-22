@@ -127,7 +127,7 @@ const Navbar = () => {
             isAuthenticated={isAuthenticated}
             closeSidebar={() => setIsSidebarOpen(false)}
           />
-          <LanguageDropdown closeSidebar={() => setIsSidebarOpen(false)} />
+          <LanguageDropdown dir="up" closeSidebar={() => setIsSidebarOpen(false)} />
         </div>
       </div>
     </div>
