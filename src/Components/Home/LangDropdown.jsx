@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import { useTranslation, getI18n } from "react-i18next";
 
-const LanguageDropdown = ({ closeSidebar = () => {} }) => {
+const LanguageDropdown = ({ dir = "up",closeSidebar = () => {} }) => {
   const { t, i18n } = useTranslation();
   const [showDropdown, setShowDropdown] = useState(false);
   const dropdownRef = useRef(null);
@@ -49,7 +49,9 @@ const LanguageDropdown = ({ closeSidebar = () => {} }) => {
         </span>
       </div>
       {showDropdown && (
-        <div className="absolute rtl:right-0 ltr:left-0 rtl:xl:left-0 ltr:xl:right-0 rtl:xl:right-auto ltr:xl:left-auto bottom-8 xl:top-[100%] xl:bottom-auto mt-2 w-48 bg-white border border-gray-200 rounded-lg shadow-lg">
+        <div className={`absolute rtl:right-0 ltr:left-0 rtl:xl:left-0 ltr:xl:right-0 rtl:xl:right-auto ltr:xl:left-auto 
+          ${dir=='down'?"xl:top-[100%] xl:bottom-auto": "bottom-8"}
+        mt-2 w-48 bg-white border border-gray-200 rounded-lg shadow-lg`}>
           <div
             onClick={() => changeLanguage("ar")}
             className="block px-4 py-2 text-gray-800 hover:bg-gray-100"

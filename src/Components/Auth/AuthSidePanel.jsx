@@ -2,8 +2,8 @@ import React from "react";
 
 const AuthSidePanel = () => {
   return (
-    <div className="w-1/2 border-r-2 ">
-      <div className="fixed top-0 bottom-0 left-0 min-h-screen rtl:left-auto rtl:right-0 w-1/2">
+    <div className="hidden md:block w-1/2">
+      <div className="fixed top-0 bottom-0 left-0 rtl:left-auto rtl:right-0 w-full md:w-1/2">
         <div className="absolute inset-0">
           <img
             src={require("../../assets/images 1.png")}
