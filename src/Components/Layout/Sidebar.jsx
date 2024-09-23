@@ -5,6 +5,8 @@ import { useTranslation } from "react-i18next";
 import SocialMediaIcons from "../Home/SocialMediaIcons";
 import SidebarLang from "./SidebarLang";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import styles from "./sidebar.module.css";
+
 import {
   faUser,
   faBasketShopping,
@@ -40,6 +42,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
   return (
     <div
       className={` 
+                ${styles.sidebar}
                 xl:col-span-2 lg:col-span-3 bg-primary p-5 pt-1 ltr:rounded-tr-xl 
                 rtl:rounded-tl-xl overflow-auto h-screen fixed top-0
                 rtl:right-0 ltr:left-0 transform 
@@ -53,7 +56,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
               `}
     >
       <div
-        className={`w-100 pt-6 flex items-center space-x-4 pb-12 rtl:space-x-reverse`}
+        className={`w-100 pt-4 flex items-center space-x-4 pb-8 rtl:space-x-reverse`}
       >
         <FontAwesomeIcon
           icon={faBars}
