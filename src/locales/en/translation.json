@@ -140,5 +140,31 @@
     "mobileNumber": "Mobile Number",
     "whatsappNumber": "WhatsApp Number",
     "Passwords must match": "Passwords must match"
+  },
+  "profile": {
+    "name": "Name",
+    "email": "Email",
+    "password": "Password",
+    "mobileNumber": "Mobile Number",
+    "whatsappNumber": "WhatsApp Number",
+    "enterName": "Enter your name",
+    "enterEmail": "Enter your email",
+    "enterPassword": "Enter your password",
+    "enterMobileNumber": "Enter your mobile number",
+    "enterWhatsappNumber": "Enter your WhatsApp number"
+  },
+  "sidebar": {
+    "Profile": "Profile",
+    "Ar": "Arabic",
+    "En": "English",
+    "中文": "Chinese",
+    "priceOrder": "Price / Order",
+    "requests": "Requests",
+    "shipments": "Shipments",
+    "shopNow": "Shop Now",
+    "orders": "Orders",
+    "warehouse": "Warehouse",
+    "contact": "Contact",
+    "logout": "Logout"
   }
 }

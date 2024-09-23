@@ -139,5 +139,32 @@
     "mobileNumber": "رقم الجوال",
     "whatsappNumber": "رقم الواتساب",
     "Passwords must match": "يجب أن تتطابق كلمات المرور"
+  },
+  "profile": {
+    "name": "الاسم",
+    "email": "البريد الإلكتروني",
+    "password": "كلمة المرور",
+    "mobileNumber": "رقم الجوال",
+    "whatsappNumber": "رقم الواتساب",
+    "enterName": "أدخل اسمك",
+    "enterEmail": "أدخل بريدك الإلكتروني",
+    "enterPassword": "أدخل كلمة المرور الخاصة بك",
+    "enterMobileNumber": "أدخل رقم جوالك",
+    "enterWhatsappNumber": "أدخل رقم الواتساب الخاص بك"
+  },
+  "sidebar": {
+    "Profile": "الملف الشخصي",
+    "Ar": "العربية",
+    "En": "الإنجليزية",
+    "中文": "الصينية",
+    "priceOrder": "السعر / الطلب",
+    "requests": "الطلبات",
+    "shipments": "الشحنات",
+    "shopNow": "تسوق الآن",
+    "services": "الخدمات",
+    "orders": "الطلبات",
+    "warehouse": "المستودع",
+    "contact": "اتصل",
+    "logout": "تسجيل الخروج"
   }
 }

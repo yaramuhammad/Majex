@@ -3,6 +3,8 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { getI18n } from "react-i18next";
 import AuthPage from "./Pages/Auth/Authpage";
 import { Toaster } from "react-hot-toast";
+import Profile from "./Pages/Profile/Profile";
+import Layout from "./Components/Layout/Layout";
 
 export default function App() {
   const i18n = getI18n();
@@ -20,6 +22,16 @@ export default function App() {
     {
       path: "/authentication/:type",
       element: <AuthPage />,
+    },
+    {
+      path: "/",
+      element: <Layout />,
+      children: [
+        {
+          path: "/profile",
+          element: <Profile />,
+        },
+      ],
     },
   ]);
 

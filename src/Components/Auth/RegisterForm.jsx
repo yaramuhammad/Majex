@@ -82,12 +82,12 @@ const RegisterForm = () => {
               placeholder={t("auth.passwordConfirmation")}
             />
             <TextField
-              type="tel"
+              type="text"
               name="mobileNumber"
               placeholder={t("auth.mobileNumber")}
             />
             <TextField
-              type="tel"
+              type="text"
               name="whatsappNumber"
               placeholder={t("auth.whatsappNumber")}
             />

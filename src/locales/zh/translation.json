@@ -138,5 +138,31 @@
     "mobileNumber": "手机号码",
     "whatsappNumber": "WhatsApp号码",
     "Passwords must match": "密码必须匹配"
+  },
+  "profile": {
+    "name": "名字",
+    "email": "电子邮件",
+    "password": "密码",
+    "mobileNumber": "手机号码",
+    "whatsappNumber": "WhatsApp号码",
+    "enterName": "输入你的名字",
+    "enterEmail": "输入你的电子邮件",
+    "enterPassword": "输入你的密码",
+    "enterMobileNumber": "输入你的手机号码",
+    "enterWhatsappNumber": "输入你的WhatsApp号码"
+  },
+  "sidebar": {
+    "Profile": "个人资料",
+    "Ar": "阿拉伯语",
+    "En": "英语",
+    "中文": "中文",
+    "priceOrder": "价格 / 订单",
+    "requests": "请求",
+    "shipments": "运输",
+    "shopNow": "立即购买",
+    "orders": "订单",
+    "warehouse": "仓库",
+    "contact": "联系",
+    "logout": "登出"
   }
 }
