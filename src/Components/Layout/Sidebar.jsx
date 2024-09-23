@@ -39,9 +39,18 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
 
   return (
     <div
-      className={`xl:col-span-2 col-span-3 bg-primary p-5 pt-1 rounded-tr-xl rtl:rounded-tl-xl rtl:rounded-tr-none overflow-auto h-screen fixed top-0 bottom-0 rtl:right-0 ltr:left-0 transform ${
-        isOpen ? "translate-x-0" : "rtl:translate-x-full ltr:-translate-x-full"
-      } transition-transform duration-300 ease-in-out z-50 lg:static lg:transform-none`}
+      className={` 
+                xl:col-span-2 lg:col-span-3 bg-primary p-5 pt-1 ltr:rounded-tr-xl 
+                rtl:rounded-tl-xl overflow-auto h-screen fixed top-0
+                rtl:right-0 ltr:left-0 transform 
+                ${
+                  isOpen
+                    ? "translate-x-0"
+                    : "rtl:translate-x-full ltr:-translate-x-full rtl:lg:translate-x-0 ltr:lg:translate-x-0"
+                } 
+                transition-transform duration-300 ease-in-out z-50 
+                lg:static lg:transform-none
+              `}
     >
       <div
         className={`w-100 pt-6 flex items-center space-x-4 pb-12 rtl:space-x-reverse`}
