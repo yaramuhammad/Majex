@@ -17,7 +17,7 @@ const Navbar = () => {
   const navLinks = [
     { to: "/", label: "navbar.home" },
     { to: "/placeorder", label: "navbar.priceOrder" },
-    { to: "/request", label: "navbar.requests" },
+    { to: "/requests", label: "navbar.requests" },
     { to: "/shipment", label: "navbar.shipments" },
     { to: "/shop", label: "navbar.shopNow" },
     { to: "/services", label: "navbar.services" },

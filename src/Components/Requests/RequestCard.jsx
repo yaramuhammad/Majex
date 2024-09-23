@@ -41,7 +41,7 @@ function RequestCard({ request }) {
         />
         <div className="flex flex-col md:flex-row items-center justify-between w-full ">
           <Link
-            to={`/request/details/${request._id}`}
+            to={`/requests/${request._id}`}
             className="text-primary text-lg md:text-xl mb-2 md:mb-0"
           >
             {t("requests.Details")}
