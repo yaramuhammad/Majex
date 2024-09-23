@@ -166,5 +166,20 @@
     "warehouse": "Warehouse",
     "contact": "Contact",
     "logout": "Logout"
+  },
+  "requests": {
+    "requestsTitle": "Requests",
+    "requestsDescription": "Find anything you want to request from any store in China.",
+    "current": "Current",
+    "history": "History",
+    "Delete": "Delete",
+    "Details": "Details",
+    "Pending": "Pending",
+    "Shipped": "Shipped",
+    "Approved": "Approved",
+    "Delivered": "Delivered",
+    "addRequestPrompt": "Add your request now!",
+    "addRequestDescription": "Find anything you want to request from any store in China",
+    "addNewRequestButton": "+ Add new request"
   }
 }

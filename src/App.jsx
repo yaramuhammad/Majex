@@ -5,6 +5,7 @@ import AuthPage from "./Pages/Auth/Authpage";
 import { Toaster } from "react-hot-toast";
 import Profile from "./Pages/Profile/Profile";
 import Layout from "./Components/Layout/Layout";
+import Requests from "./Pages/Requests/Requests";
 
 export default function App() {
   const i18n = getI18n();
@@ -30,6 +31,10 @@ export default function App() {
         {
           path: "/profile",
           element: <Profile />,
+        },
+        {
+          path: "/requests",
+          element: <Requests />,
         },
       ],
     },

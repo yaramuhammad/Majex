@@ -166,5 +166,20 @@
     "warehouse": "المستودع",
     "contact": "اتصل",
     "logout": "تسجيل الخروج"
+  },
+  "requests": {
+    "requestsTitle": "الطلبات",
+    "requestsDescription": "ابحث عن أي شيء تريد طلبه من أي متجر في الصين.",
+    "current": "الحالية",
+    "history": "السجل",
+    "Delete": "الحذف",
+    "Details": "التفاصيل",
+    "Pending": "قيد الانتظار",
+    "Shipped": "تم الشحن",
+    "Approved": "تمت الموافقة",
+    "Delivered": "تم التوصيل",
+    "addRequestPrompt": "أضف طلبك الآن!",
+    "addRequestDescription": "ابحث عن أي شيء تريد طلبه من أي متجر في الصين",
+    "addNewRequestButton": " + أضف طلب جديد"
   }
 }

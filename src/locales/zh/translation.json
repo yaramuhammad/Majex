@@ -164,5 +164,20 @@
     "warehouse": "仓库",
     "contact": "联系",
     "logout": "登出"
+  },
+  "requests": {
+    "requestsTitle": "请求",
+    "requestsDescription": "在中国的任何商店寻找您想要订购的任何商品。",
+    "current": "当前",
+    "history": "历史记录",
+    "Delete": "删除",
+    "Details": "详情",
+    "Pending": "待处理",
+    "Shipped": "已发货",
+    "Approved": "已批准",
+    "Delivered": "已送达",
+    "addRequestPrompt": "立即添加您的请求！",
+    "addRequestDescription": "在中国的任何商店寻找您想要订购的任何商品。",
+    "addNewRequestButton": "+ 添加新请求"
   }
 }
