@@ -179,5 +179,26 @@
     "addRequestPrompt": "立即添加您的请求！",
     "addRequestDescription": "在中国的任何商店寻找您想要订购的任何商品。",
     "addNewRequestButton": "+ 添加新请求"
+  },
+  "addRequest": {
+    "uploadSingleProducts": "新增请求",
+    "uploadMultipleProducts": "上传多个产品",
+    "productImage": "产品图片",
+    "onlyOneImage": "仅限一张图片",
+    "shipmentType": "运输类型",
+    "overAir": "空运",
+    "overSea": "海运",
+    "product": "产品",
+    "productLink": "产品链接",
+    "quantity": "数量",
+    "targetPrice": "目标价格",
+    "weight": "重量",
+    "color": "颜色",
+    "note": "备注",
+    "confirmRequest": "确认请求",
+    "dropImageOr": "拖放图片或",
+    "browse": "浏览",
+    "packingList": "装箱单",
+    "dropFileOr": "拖放文件或"
   }
 }

@@ -6,6 +6,7 @@ import { Toaster } from "react-hot-toast";
 import Profile from "./Pages/Profile/Profile";
 import Layout from "./Components/Layout/Layout";
 import Requests from "./Pages/Requests/Requests";
+import AddRequest from "./Pages/Requests/AddRequest";
 
 export default function App() {
   const i18n = getI18n();
@@ -35,6 +36,10 @@ export default function App() {
         {
           path: "/requests",
           element: <Requests />,
+        },
+        {
+          path: "/requests/new",
+          element: <AddRequest />,
         },
       ],
     },

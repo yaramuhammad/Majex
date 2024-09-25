@@ -181,5 +181,26 @@
     "addRequestPrompt": "أضف طلبك الآن!",
     "addRequestDescription": "ابحث عن أي شيء تريد طلبه من أي متجر في الصين",
     "addNewRequestButton": " + أضف طلب جديد"
+  },
+  "addRequest": {
+    "uploadSingleProducts": "أضف طلب جديد",
+    "uploadMultipleProducts": "رفع منتجات متعددة",
+    "productImage": "صورة المنتج",
+    "onlyOneImage": "صورة واحدة فقط",
+    "shipmentType": "نوع الشحنة",
+    "overAir": "جوي",
+    "overSea": "بحري",
+    "product": "منتج",
+    "productLink": "رابط المنتج",
+    "quantity": "الكمية",
+    "targetPrice": "السعر المستهدف",
+    "weight": "الوزن",
+    "color": "اللون",
+    "note": "ملاحظة",
+    "confirmRequest": "تأكيد الطلب",
+    "dropImageOr": "اسحب صورة او",
+    "browse": "تصفح",
+    "packingList": "قائمة التعبئة",
+    "dropFileOr": "اسحب ملف او"
   }
 }

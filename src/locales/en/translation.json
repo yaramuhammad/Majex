@@ -181,5 +181,26 @@
     "addRequestPrompt": "Add your request now!",
     "addRequestDescription": "Find anything you want to request from any store in China",
     "addNewRequestButton": "+ Add new request"
+  },
+  "addRequest": {
+    "uploadSingleProducts": "Add New Request",
+    "uploadMultipleProducts": "Upload multiple products",
+    "productImage": "Product image",
+    "onlyOneImage": "Only one image",
+    "shipmentType": "Shipment type",
+    "overAir": "Over air",
+    "overSea": "Over sea",
+    "product": "Product",
+    "productLink": "Product link",
+    "quantity": "Quantity",
+    "targetPrice": "Target price",
+    "weight": "Weight",
+    "color": "Color",
+    "note": "Note",
+    "confirmRequest": "Confirm request",
+    "dropImageOr": "Drop image or",
+    "browse": "browse",
+    "packingList": "Packing List",
+    "dropFileOr": "Drop File or"
   }
 }

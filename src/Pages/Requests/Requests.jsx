@@ -50,7 +50,7 @@ function Requests() {
             {t("requests.requestsDescription")}
           </p>
         </div>
-        <Link to="/addrequest">
+        <Link to="/requests/new">
           <button className="mt-6 px-8 md:px-12 py-2 md:py-3 bg-primary text-white rounded text-base md:text-lg">
             {t("requests.addNewRequestButton")}
           </button>
