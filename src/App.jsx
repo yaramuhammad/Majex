@@ -7,6 +7,7 @@ import Profile from "./Pages/Profile/Profile";
 import Layout from "./Components/Layout/Layout";
 import Requests from "./Pages/Requests/Requests";
 import AddRequest from "./Pages/Requests/AddRequest";
+import Warehouse from "./Pages/Warehouse/Warehouse";
 
 export default function App() {
   const i18n = getI18n();
@@ -40,6 +41,10 @@ export default function App() {
         {
           path: "/requests/new",
           element: <AddRequest />,
+        },
+        {
+          path: "/warehouse",
+          element: <Warehouse />,
         },
       ],
     },

@@ -200,5 +200,23 @@
     "browse": "浏览",
     "packingList": "装箱单",
     "dropFileOr": "拖放文件或"
+  },
+  "warehouse": {
+    "China WareHouse": "中国仓库",
+    "User Identify": "用户标识",
+    "Country": "国家",
+    "City": "城市",
+    "District": "地区",
+    "Street": "街道",
+    "Building": "建筑",
+    "Phone": "电话",
+    "Warehouse No": "仓库编号",
+    "Address English": "英文地址",
+    "Address China": "中文地址",
+    "Error loading data": "加载数据时出错",
+    "Please make sure to stick your code on your shipment so it could arrive safely": "请确保将您的代码粘贴在货件上，以确保其安全到达",
+    "Note": "备注",
+    "For Air Shippments": "用于空运货件",
+    "For Sea Shippments": "用于海运货件"
   }
 }

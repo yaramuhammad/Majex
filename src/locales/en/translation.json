@@ -202,5 +202,22 @@
     "browse": "browse",
     "packingList": "Packing List",
     "dropFileOr": "Drop File or"
+  },
+  "warehouse": {
+    "China WareHouse": "China Warehouse",
+    "User Identify": "User Identify",
+    "Country": "Country",
+    "City": "City",
+    "District": "District",
+    "Street": "Street",
+    "Building": "Building",
+    "Phone": "Phone",
+    "Warehouse No": "Warehouse No",
+    "Address English": "Address English",
+    "Address China": "Address China",
+    "Please make sure to stick your code on your shipment so it could arrive safely": "Please make sure to stick your code on your shipment so it could arrive safely",
+    "Note": "Note",
+    "For Air Shippments": "For Air Shippments",
+    "For Sea Shippments": "For Sea Shippments"
   }
 }

@@ -202,5 +202,23 @@
     "browse": "تصفح",
     "packingList": "قائمة التعبئة",
     "dropFileOr": "اسحب ملف او"
+  },
+  "warehouse": {
+    "User Identify": "تحديد المستخدم",
+    "Country": "البلد",
+    "City": "المدينة",
+    "District": "الحي",
+    "Street": "الشارع",
+    "Building": "المبنى",
+    "Phone": "الهاتف",
+    "Warehouse No": "رقم المستودع",
+    "Address English": "العنوان باللغة الإنجليزية",
+    "Address China": "العنوان بالصينية",
+    "Error loading data": "خطأ في تحميل البيانات",
+    "China WareHouse": "مستودع الصين",
+    "Please make sure to stick your code on your shipment so it could arrive safely": "يجب أن تلصق هذا الكود علي شحنتك لضمان وصولها بأمان",
+    "Note": "ملاحظة",
+    "For Air Shippments": "للشحنات الجوية",
+    "For Sea Shippments": "للشحنات البحرية"
   }
 }
