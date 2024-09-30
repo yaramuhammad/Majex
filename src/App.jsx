@@ -8,6 +8,7 @@ import Layout from "./Components/Layout/Layout";
 import Requests from "./Pages/Requests/Requests";
 import AddRequest from "./Pages/Requests/AddRequest";
 import Warehouse from "./Pages/Warehouse/Warehouse";
+import LCL from "./Pages/LCL/LCL";
 
 export default function App() {
   const i18n = getI18n();
@@ -45,6 +46,10 @@ export default function App() {
         {
           path: "/warehouse",
           element: <Warehouse />,
+        },
+        {
+          path: "/lcl",
+          element: <LCL />,
         },
       ],
     },

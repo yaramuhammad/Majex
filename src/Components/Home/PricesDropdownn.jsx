@@ -19,10 +19,10 @@ function PricesDropdownn() {
                 <div
                 style={{zIndex:"9999999999999"}}
                  className='absolute bottom-8 xl:top-[100%] xl:bottom-auto mt-2 w-48 bg-white border rounded shadow-lg'>
-                    <Link to="/lcl/sea" className="block px-4 py-2 text-gray-800 hover:bg-gray-200">
+                    <Link to="/lcl" className="block px-4 py-2 text-gray-800 hover:bg-gray-200">
                         {t("navbar.lcl")}
                     </Link>
-                    <Link to="/fcl/large" className="block px-4 py-2 text-gray-800 hover:bg-gray-200">
+                    <Link to="/fcl" className="block px-4 py-2 text-gray-800 hover:bg-gray-200">
                         {t("navbar.fcl")}
                     </Link>
                 </div>
