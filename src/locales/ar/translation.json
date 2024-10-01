@@ -235,5 +235,21 @@
     "6000 = 0 kg": "kg 0 = 6000 /",
     "Large container": "حاوية كبيرة",
     "Small container": "حاوية صغيرة"
+  },
+  "shipments": {
+    "shipmentsTitle": "الشحنات",
+    "shipmentsDescription": "اعثر على أي شيء ترغب في طلبه من أي متجر في الصين",
+    "addNewShipmentButton": "+ إضافة شحنة جديدة",
+    "addShipmentDescription": "اشحن أي شيء تريده من الصين.",
+    "addShipmentPrompt": "أضف شحنتك",
+    "from": "من",
+    "to": "إلي",
+    "confirmShipment": "تأكيد الشحن",
+    "receivingAddress": "عنوان الوصول",
+    "supplierAddress": "عنوان المورد",
+    "Add New Shipment": "أضف شحنة جديدة",
+    "Delete": "الحذف",
+    "Details": "التفاصيل",
+    "Pending": "قيد الانتظار"
   }
 }

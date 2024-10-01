@@ -3,7 +3,7 @@ import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from 'react-router-dom';
 import SocialMediaIcons from './SocialMediaIcons';
-import { useTranslation, getI18n } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
 
 const Footer = () => {
     const { t } = useTranslation();

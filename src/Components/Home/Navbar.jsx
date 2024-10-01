@@ -18,7 +18,7 @@ const Navbar = () => {
     { to: "/", label: "navbar.home" },
     { to: "/placeorder", label: "navbar.priceOrder" },
     { to: "/requests", label: "navbar.requests" },
-    { to: "/shipment", label: "navbar.shipments" },
+    { to: "/shipments", label: "navbar.shipments" },
     { to: "/shop", label: "navbar.shopNow" },
     { to: "/services", label: "navbar.services" },
   ];

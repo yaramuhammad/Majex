@@ -234,5 +234,21 @@
     "6000 = 0 kg": "/6000 = 0 kg",
     "Large container": "Large container",
     "Small container": "Small container"
+  },
+  "shipments": {
+    "shipmentsTitle": "Shipments",
+    "shipmentsDescription": "Find anything you want to request from any store in china",
+    "addNewShipmentButton": "+ Add new shipment",
+    "addShipmentDescription": "Ship anything you want from china.",
+    "addShipmentPrompt": "Add Your Shipment",
+    "from": "From",
+    "to": "To",
+    "confirmShipment": "Confirm Shipment",
+    "receivingAddress": "Receiving Address",
+    "supplierAddress": "Supplier Address",
+    "Add New Shipment": "Add New Shipment",
+    "Delete": "Delete",
+    "Details": "Details",
+    "Pending": "Pending"
   }
 }

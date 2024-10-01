@@ -10,6 +10,7 @@ import AddRequest from "./Pages/Requests/AddRequest";
 import Warehouse from "./Pages/Warehouse/Warehouse";
 import LCL from "./Pages/LCL/LCL";
 import FCL from "./Pages/FCL/FCL";
+import Shipments from "./Pages/Shipments/Shipments";
 
 export default function App() {
   const i18n = getI18n();
@@ -55,6 +56,10 @@ export default function App() {
         {
           path: "/fcl",
           element: <FCL />,
+        },
+        {
+          path: "/shipments",
+          element: <Shipments />,
         },
       ],
     },

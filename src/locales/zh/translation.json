@@ -233,5 +233,21 @@
     "6000 = 0 kg": "6000 = 0 公斤",
     "Large container": "大集装箱",
     "Small container": "小集装箱"
+  },
+  "shipments": {
+    "shipmentsTitle": "货运",
+    "shipmentsDescription": "找到您想从中国任何商店请求的任何物品",
+    "addNewShipmentButton": "+ 添加新货运",
+    "addShipmentDescription": "从中国运送您想要的任何东西。",
+    "addShipmentPrompt": "添加您的货运",
+    "from": "从",
+    "to": "到",
+    "confirmShipment": "确认货运",
+    "receivingAddress": "收货地址",
+    "supplierAddress": "供应商地址",
+    "Add New Shipment": "添加新货运",
+    "Delete": "删除",
+    "Details": "详情",
+    "Pending": "待定"
   }
 }

@@ -32,7 +32,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
     { img: faUser, text: t("sidebar.Profile"), link: "/profile" },
     { img: faTag, text: t("sidebar.priceOrder"), link: "/placeorder" },
     { img: faBoxesPacking, text: t("sidebar.requests"), link: "/requests" },
-    { img: faBox, text: t("sidebar.shipments"), link: "/shipment" },
+    { img: faBox, text: t("sidebar.shipments"), link: "/shipments" },
     { img: faCartShopping, text: t("sidebar.shopNow"), link: "/shop" },
     { img: faBasketShopping, text: t("sidebar.orders"), link: "/route6" },
     { img: faWarehouse, text: t("sidebar.warehouse"), link: "/warehouse" },
