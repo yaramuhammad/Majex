@@ -43,6 +43,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
     <div
       className={` 
                 ${styles.sidebar}
+                flex flex-col justify-around
                 xl:col-span-2 lg:col-span-3 bg-primary p-5 pt-1 ltr:rounded-tr-xl 
                 rtl:rounded-tl-xl overflow-auto h-screen fixed top-0
                 rtl:right-0 ltr:left-0 transform 

@@ -29,13 +29,13 @@ function CalcPrice({ setMultiplier, type, divisor }) {
   };
 
   let inputStyle =
-    "border-2 mx-2 border-primary w-full md:w-1/5 rounded-2xl p-3 text-xl mb-4 md:mb-0";
+    "border-2 mx-2 border-primary w-full md:w-1/5 rounded-2xl p-3 text-sm xl:text-xl mb-4 md:mb-0 focus:outline-primary";
 
   return (
     <div className="mx-5 text-2xl lg:text-4xl font-semibold text-center py-5">
-      {t("Calculate")}
+      {t("prices.Calculate")}
       <form
-        className="my-10 flex flex-col items-center justify-center sm:justify-start md:flex-row "
+        className="my-10 flex flex-col items-center justify-center sm:justify-start md:flex-row"
         onSubmit={(e) => {
           e.preventDefault();
           handleCalculation();
@@ -45,7 +45,7 @@ function CalcPrice({ setMultiplier, type, divisor }) {
           type="text"
           name="length"
           className={inputStyle}
-          placeholder={t("Length")}
+          placeholder={t("prices.Length")}
           value={length}
           onChange={(e) => setLength(e.target.value)}
         />
@@ -53,7 +53,7 @@ function CalcPrice({ setMultiplier, type, divisor }) {
           type="text"
           name="width"
           className={inputStyle}
-          placeholder={t("Width")}
+          placeholder={t("prices.Width")}
           value={width}
           onChange={(e) => setWidth(e.target.value)}
         />
@@ -61,7 +61,7 @@ function CalcPrice({ setMultiplier, type, divisor }) {
           type="text"
           name="height"
           className={inputStyle}
-          placeholder={t("Height")}
+          placeholder={t("prices.Height")}
           value={height}
           onChange={(e) => setHeight(e.target.value)}
         />
@@ -69,7 +69,7 @@ function CalcPrice({ setMultiplier, type, divisor }) {
           type="text"
           name="cartonpcs"
           className={`${inputStyle} ${type === "air" ? "hidden" : ""}`}
-          placeholder={t("Cartoon Pieces")}
+          placeholder={t("prices.Cartoon Pieces")}
           value={cartonPcs}
           onChange={(e) => setCartonPcs(e.target.value)}
         />
@@ -82,7 +82,7 @@ function CalcPrice({ setMultiplier, type, divisor }) {
         onClick={handleCalculation}
         className="text-xl xl:text-2xl px-4 py-2 mt-4 md:mt-0 md:ml-4 bg-primary text-white rounded-2xl"
       >
-        {t("Calculate")}
+        {t("prices.Calculate")}
       </button>
     </div>
   );

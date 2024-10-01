@@ -37,7 +37,7 @@ function LCL() {
     <>
       <div>
         <p className="mx-5 text-2xl lg:text-3xl text-primary my-4 font-semibold">
-          {t("LCL")}
+          {t("prices.LCL")}
         </p>
         <div className={`flex flex-col px-5 sm:flex-row w-full`}>
           <button
@@ -48,7 +48,7 @@ function LCL() {
                 : "border-primary text-primary"
             }`}
           >
-            {t("Sea shipping")}
+            {t("prices.Sea shipping")}
           </button>
           <button
             onClick={() => setTab("air")}
@@ -58,7 +58,7 @@ function LCL() {
                 : "border-primary text-primary"
             }`}
           >
-            {t("Air shipping")}
+            {t("prices.Air shipping")}
           </button>
         </div>
       </div>

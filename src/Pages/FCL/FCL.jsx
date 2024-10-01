@@ -30,7 +30,7 @@ function FCL() {
     <>
       <div>
         <p className="mx-5 text-2xl lg:text-3xl text-primary my-4 font-semibold">
-          {t("FCL")}
+          {t("prices.FCL")}
         </p>
         <div className={`flex flex-col px-5 sm:flex-row w-full`}>
           <button
@@ -41,7 +41,7 @@ function FCL() {
                 : "border-primary text-primary"
             }`}
           >
-            {t("Large container")}
+            {t("prices.Large container")}
           </button>
           <button
             onClick={() => setTab("small")}
@@ -51,7 +51,7 @@ function FCL() {
                 : "border-primary text-primary"
             }`}
           >
-            {t("Small container")}
+            {t("prices.Small container")}
           </button>
         </div>
       </div>
@@ -60,11 +60,11 @@ function FCL() {
         <Loading />
       ) : tab === "large" ? (
         fclsLarge.map((fcl) => {
-          return <PriceCard fcl={fcl} />;
+          return <PriceCard fcl={fcl} key={fcl._id}/>;
         })
       ) : (
         fclsSmall.map((fcl) => {
-          return <PriceCard fcl={fcl} />;
+          return <PriceCard fcl={fcl} key={fcl._id}/>;
         })
       )}
     </>

@@ -220,5 +220,20 @@
     "Note": "ملاحظة",
     "For Air Shippments": "للشحنات الجوية",
     "For Sea Shippments": "للشحنات البحرية"
+  },
+  "prices": {
+    "LCL": "أقل من حاوية",
+    "FCL": "حاوية كاملة",
+    "Sea shipping": "الشحن البحري",
+    "Air shipping": "الشحن الجوي",
+    "Total": "المجموع",
+    "Calculate": "إحسب",
+    "Length": "الطول",
+    "Width": "العرض",
+    "Height": "الإرتفاع",
+    "Cartoon Pieces": "عدد الكراتين",
+    "6000 = 0 kg": "kg 0 = 6000 /",
+    "Large container": "حاوية كبيرة",
+    "Small container": "حاوية صغيرة"
   }
 }

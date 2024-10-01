@@ -218,5 +218,20 @@
     "Note": "备注",
     "For Air Shippments": "用于空运货件",
     "For Sea Shippments": "用于海运货件"
+  },
+  "prices": {
+    "LCL": "拼箱",
+    "FCL": "整箱",
+    "Sea shipping": "海运",
+    "Air shipping": "空运",
+    "Total": "总计",
+    "Calculate": "计算",
+    "Length": "长度",
+    "Width": "宽度",
+    "Height": "高度",
+    "Cartoon Pieces": "纸箱件数",
+    "6000 = 0 kg": "6000 = 0 公斤",
+    "Large container": "大集装箱",
+    "Small container": "小集装箱"
   }
 }

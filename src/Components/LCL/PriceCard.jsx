@@ -13,7 +13,7 @@ function PriceCard({ id, title, price, multiplier }) {
         <p className="text-sm py-3">{price} SAR/KG</p>
       </div>
       <div className="bg-white text-black py-2 px-6 rounded-2xl flex justify-between w-full sm:w-1/4 mt-4 sm:mt-0 ">
-        <p className="text-lg font-semibold">{t("Total")}</p>
+        <p className="text-lg font-semibold">{t("prices.Total")}</p>
         <p>${isNaN(price * multiplier) ? 0 : price * multiplier}</p>
       </div>
     </div>

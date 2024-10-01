@@ -51,19 +51,19 @@ const SidebarLang = () => {
         <div className="absolute rtl:right-0 ltr:left-0   bottom-8  w-48 bg-white border border-gray-200 rounded-lg shadow-lg">
           <div
             onClick={() => changeLanguage("ar")}
-            className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
+            className="block px-4 py-2 text-gray-800 hover:bg-gray-100 rounded-lg"
           >
             {t("sidebar.Ar")}
           </div>
           <div
             onClick={() => changeLanguage("en")}
-            className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
+            className="block px-4 py-2 text-gray-800 hover:bg-gray-100 rounded-lg"
           >
             {t("sidebar.En")}
           </div>
           <div
             onClick={() => changeLanguage("zh")}
-            className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
+            className="block px-4 py-2 text-gray-800 hover:bg-gray-100 rounded-lg"
           >
             {t("sidebar.中文")}
           </div>

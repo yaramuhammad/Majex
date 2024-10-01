@@ -219,5 +219,20 @@
     "Note": "Note",
     "For Air Shippments": "For Air Shippments",
     "For Sea Shippments": "For Sea Shippments"
+  },
+  "prices": {
+    "LCL": "LCL",
+    "FCL": "FCL",
+    "Sea shipping": "Sea shipping",
+    "Air shipping": "Air shipping",
+    "Total": "Total",
+    "Calculate": "Calculate",
+    "Length": "Length",
+    "Width": "Width",
+    "Height": "Height",
+    "Cartoon Pieces": "Cartoon Pieces",
+    "6000 = 0 kg": "/6000 = 0 kg",
+    "Large container": "Large container",
+    "Small container": "Small container"
   }
 }
