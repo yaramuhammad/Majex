@@ -248,6 +248,16 @@
     "Add New Shipment": "添加新货运",
     "Delete": "删除",
     "Details": "详情",
-    "Pending": "待定"
+    "Pending": "待定",
+    "title": "添加新货件",
+    "ShipmentImage": "货件图片",
+    "onlyOneImage": "仅一张图片",
+    "shipmentType": "货运类型",
+    "overAir": "空运",
+    "overSea": "海运",
+    "supplieraddress": "供应商地址",
+    "Recivingaddress": "收货地址",
+    "note": "备注",
+    "packingList": "装箱单"
   }
 }

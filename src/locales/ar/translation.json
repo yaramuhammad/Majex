@@ -250,6 +250,16 @@
     "Add New Shipment": "أضف شحنة جديدة",
     "Delete": "الحذف",
     "Details": "التفاصيل",
-    "Pending": "قيد الانتظار"
+    "Pending": "قيد الانتظار",
+    "title": "أضف شحنة جديد",
+    "ShipmentImage": "صورة الشحنة ",
+    "onlyOneImage": "صورة واحدة فقط",
+    "shipmentType": "نوع الشحنة",
+    "overAir": "جوي",
+    "overSea": "بحري",
+    "supplieraddress": "عنوان المورد",
+    "Recivingaddress": "عنوان الاستلام",
+    "note": "ملاحظة",
+    "packingList": "قائمة التعبئة"
   }
 }

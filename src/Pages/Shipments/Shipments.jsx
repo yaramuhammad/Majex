@@ -82,7 +82,6 @@ function Shipments() {
           </div>
         </div>
       )}
-      ;
     </>
   );
 }

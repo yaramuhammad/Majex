@@ -249,6 +249,16 @@
     "Add New Shipment": "Add New Shipment",
     "Delete": "Delete",
     "Details": "Details",
-    "Pending": "Pending"
+    "Pending": "Pending",
+    "title": "Add New Shipment",
+    "ShipmentImage": "Shipment image",
+    "onlyOneImage": "Only one image",
+    "shipmentType": "Shipment type",
+    "overAir": "Over air",
+    "overSea": "Over sea",
+    "supplieraddress": "Supplier Address",
+    "Recivingaddress": "Reciving Address",
+    "note": "Note",
+    "packingList": "Packing List"
   }
 }
