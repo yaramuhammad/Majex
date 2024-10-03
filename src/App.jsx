@@ -14,6 +14,7 @@ import Shipments from "./Pages/Shipments/Shipments";
 import AddShipment from "./Pages/Shipments/AddShipment";
 import OurServices from "./Pages/Services/Services";
 import Shop from "./Pages/Shop/Shop";
+import Contact from "./Pages/Contact/Contact";
 
 export default function App() {
   const i18n = getI18n();
@@ -31,6 +32,10 @@ export default function App() {
     {
       path: "/authentication/:type",
       element: <AuthPage />,
+    },
+    {
+      path: "contact",
+      element: <Contact />,
     },
     {
       path: "/",
