@@ -260,5 +260,14 @@
     "Recivingaddress": "Reciving Address",
     "note": "Note",
     "packingList": "Packing List"
+  },
+  "ourServices": {
+    "Services": "Our Services",
+    "Product sourcing": "Product Sourcing",
+    "Quality Inspection": "Quality Inspection ",
+    "Production Management": "Production Management",
+    "Product sourcing description": "Our local team can source and communicate with selected factories in China more quickly. You can spend more time with your family or expand your business. We have a 10,000-square-meter warehouse for you as temporary storage. Our quality inspector will do a careful quality inspection before shipping the goods out.",
+    "Quality Inspection description": "We provide free quality inspection and temporary warehouse storage service. Our inspectors will open most of your cartons to check quality and specifications, and the record will be sent to you through HD photos and videos.",
+    "Production Management description": "We simplify the whole process of production in China: confirm samples, place order to each supplier, do quality control, manage production time. All this reduces risks for you and guarantees that the goods will arrive on time."
   }
 }

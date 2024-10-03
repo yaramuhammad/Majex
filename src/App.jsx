@@ -12,6 +12,7 @@ import LCL from "./Pages/LCL/LCL";
 import FCL from "./Pages/FCL/FCL";
 import Shipments from "./Pages/Shipments/Shipments";
 import AddShipment from "./Pages/Shipments/AddShipment";
+import OurServices from "./Pages/Services/Services";
 
 export default function App() {
   const i18n = getI18n();
@@ -65,6 +66,10 @@ export default function App() {
         {
           path: "/shipments/new",
           element: <AddShipment />,
+        },
+        {
+          path: "/services",
+          element: <OurServices />,
         },
       ],
     },

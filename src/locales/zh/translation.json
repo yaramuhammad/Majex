@@ -259,5 +259,14 @@
     "Recivingaddress": "收货地址",
     "note": "备注",
     "packingList": "装箱单"
+  },
+  "ourServices": {
+    "Services": "我们的服务",
+    "Product sourcing": "产品采购",
+    "Quality Inspection": "质量检查",
+    "Production Management": "生产管理",
+    "Product sourcing description": "我们的本地团队可以更快地寻找并与中国的工厂沟通。你可以有更多时间陪伴家人或拓展业务。我们有一个1万平方米的仓库作为您的临时存储空间。我们的质检员将在发货前进行仔细的质量检查。",
+    "Quality Inspection description": "我们提供免费的质量检查和临时仓储服务。我们的检查员会打开大部分纸箱检查质量和规格，记录将通过高清照片和视频发送给您。",
+    "Production Management description": "我们简化了在中国的整个生产过程：确认样品，向每个供应商下单，进行质量控制，管理生产时间。所有这些都降低了您的风险，并保证货物准时到达。"
   }
 }
