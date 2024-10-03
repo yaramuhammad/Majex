@@ -16,6 +16,7 @@ import OurServices from "./Pages/Services/Services";
 import Shop from "./Pages/Shop/Shop";
 import Contact from "./Pages/Contact/Contact";
 import Product from "./Pages/Product/Product";
+import Order from "./Pages/Order/Order";
 
 export default function App() {
   const i18n = getI18n();
@@ -85,6 +86,10 @@ export default function App() {
         {
           path: "/product/:productId",
           element: <Product />,
+        },
+        {
+          path: "/order",
+          element: <Order />,
         },
       ],
     },
