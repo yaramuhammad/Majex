@@ -4,7 +4,7 @@ function OurServices() {
   const { t } = useTranslation();
   return (
     <>
-      <h2 className="pt-7 font-bold text-xl md:text-3xl text-custom-red">
+      <h2 className="pt-7 font-bold text-xl md:text-3xl text-primary">
         {t("ourServices.Services")}
       </h2>
 

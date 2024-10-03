@@ -13,6 +13,7 @@ import FCL from "./Pages/FCL/FCL";
 import Shipments from "./Pages/Shipments/Shipments";
 import AddShipment from "./Pages/Shipments/AddShipment";
 import OurServices from "./Pages/Services/Services";
+import Shop from "./Pages/Shop/Shop";
 
 export default function App() {
   const i18n = getI18n();
@@ -70,6 +71,10 @@ export default function App() {
         {
           path: "/services",
           element: <OurServices />,
+        },
+        {
+          path: "/shop",
+          element: <Shop />,
         },
       ],
     },
